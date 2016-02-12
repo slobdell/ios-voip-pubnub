@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69489B541B4EC49D005E92E9 /* CodecProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69489B531B4EC49D005E92E9 /* CodecProtocol.swift */; };
+		69AE6A581B4F100500257891 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69489B4F1B4DE06A005E92E9 /* libopus.a */; };
+		69AE6A5F1B4F119200257891 /* MessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6A5E1B4F119200257891 /* MessageProtocol.swift */; };
+		69AE6A611B4F123600257891 /* VoicePacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6A601B4F123600257891 /* VoicePacket.swift */; };
+		69AE6A631B4F13D000257891 /* MessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6A621B4F13D000257891 /* MessageFactory.swift */; };
+		69FE31C01B4ACF0800822693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31BF1B4ACF0800822693 /* AppDelegate.swift */; };
+		69FE31C21B4ACF0800822693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31C11B4ACF0800822693 /* ViewController.swift */; };
+		69FE31C51B4ACF0800822693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FE31C31B4ACF0800822693 /* Main.storyboard */; };
+		69FE31C71B4ACF0800822693 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FE31C61B4ACF0800822693 /* Images.xcassets */; };
+		69FE31CA1B4ACF0800822693 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FE31C81B4ACF0800822693 /* LaunchScreen.xib */; };
+		69FE31D61B4ACF0900822693 /* walkieTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31D51B4ACF0900822693 /* walkieTest1Tests.swift */; };
+		69FE31E01B4AD1CE00822693 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31DF1B4AD1CE00822693 /* MainViewController.swift */; };
+		69FE31EA1B4B032D00822693 /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31E91B4B032D00822693 /* Communicator.swift */; };
+		69FE31EE1B4BAFF100822693 /* TinCanX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31ED1B4BAFF100822693 /* TinCanX.swift */; };
+		69FE31F11B4BB0B900822693 /* ObserverSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31F01B4BB0B900822693 /* ObserverSubject.swift */; };
+		69FE31F31B4BB15B00822693 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31F21B4BB15B00822693 /* Observer.swift */; };
+		69FE31F51B4BB20B00822693 /* EncodedAudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31F41B4BB20B00822693 /* EncodedAudioCapture.swift */; };
+		69FE31F71B4BB75400822693 /* TinCanXProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31F61B4BB75400822693 /* TinCanXProtocol.swift */; };
+		69FE31F91B4C189700822693 /* AudioEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31F81B4C189700822693 /* AudioEncoder.swift */; };
+		69FE31FB1B4C18A600822693 /* AudioDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31FA1B4C18A600822693 /* AudioDecoder.swift */; };
+		69FE31FD1B4C195C00822693 /* EncodedAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31FC1B4C195C00822693 /* EncodedAudioPlayer.swift */; };
+		69FE31FF1B4C2D5F00822693 /* JitterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE31FE1B4C2D5F00822693 /* JitterBuffer.swift */; };
+		69FE32011B4C4B1400822693 /* TinCanXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE32001B4C4B1400822693 /* TinCanXConstants.swift */; };
+		69FE32081B4D8CDC00822693 /* OpusCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE32071B4D8CDC00822693 /* OpusCodec.swift */; };
+		88C25AAF740748225C6CDE24 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB98E87E2FEA400697199CCB /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69FE31D01B4ACF0900822693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69FE31B21B4ACF0800822693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69FE31B91B4ACF0800822693;
+			remoteInfo = walkieTest1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FC91F0C718384440CD84198 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		69489B4F1B4DE06A005E92E9 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		69489B531B4EC49D005E92E9 /* CodecProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodecProtocol.swift; sourceTree = "<group>"; };
+		69489B571B4EFC65005E92E9 /* libopus2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus2.a; sourceTree = "<group>"; };
+		69AE6A541B4F0FA800257891 /* libopusComputer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopusComputer.a; sourceTree = "<group>"; };
+		69AE6A561B4F0FAE00257891 /* libopusPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopusPhone.a; sourceTree = "<group>"; };
+		69AE6A5E1B4F119200257891 /* MessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageProtocol.swift; sourceTree = "<group>"; };
+		69AE6A601B4F123600257891 /* VoicePacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoicePacket.swift; sourceTree = "<group>"; };
+		69AE6A621B4F13D000257891 /* MessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageFactory.swift; sourceTree = "<group>"; };
+		69FE31BA1B4ACF0800822693 /* walkieTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkieTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FE31BE1B4ACF0800822693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FE31BF1B4ACF0800822693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69FE31C11B4ACF0800822693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69FE31C41B4ACF0800822693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69FE31C61B4ACF0800822693 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69FE31C91B4ACF0800822693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69FE31CF1B4ACF0900822693 /* walkieTest1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkieTest1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FE31D41B4ACF0900822693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FE31D51B4ACF0900822693 /* walkieTest1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkieTest1Tests.swift; sourceTree = "<group>"; };
+		69FE31DF1B4AD1CE00822693 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69FE31E61B4B001200822693 /* walkieTest1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walkieTest1-Bridging-Header.h"; sourceTree = "<group>"; };
+		69FE31E91B4B032D00822693 /* Communicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
+		69FE31ED1B4BAFF100822693 /* TinCanX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinCanX.swift; sourceTree = "<group>"; };
+		69FE31F01B4BB0B900822693 /* ObserverSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverSubject.swift; sourceTree = "<group>"; };
+		69FE31F21B4BB15B00822693 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		69FE31F41B4BB20B00822693 /* EncodedAudioCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodedAudioCapture.swift; sourceTree = "<group>"; };
+		69FE31F61B4BB75400822693 /* TinCanXProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinCanXProtocol.swift; sourceTree = "<group>"; };
+		69FE31F81B4C189700822693 /* AudioEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEncoder.swift; sourceTree = "<group>"; };
+		69FE31FA1B4C18A600822693 /* AudioDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDecoder.swift; sourceTree = "<group>"; };
+		69FE31FC1B4C195C00822693 /* EncodedAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodedAudioPlayer.swift; sourceTree = "<group>"; };
+		69FE31FE1B4C2D5F00822693 /* JitterBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JitterBuffer.swift; sourceTree = "<group>"; };
+		69FE32001B4C4B1400822693 /* TinCanXConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinCanXConstants.swift; sourceTree = "<group>"; };
+		69FE32071B4D8CDC00822693 /* OpusCodec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpusCodec.swift; sourceTree = "<group>"; };
+		AB98E87E2FEA400697199CCB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19E585C668750AE4A9CB12B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69FE31B71B4ACF0800822693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69AE6A581B4F100500257891 /* libopus.a in Frameworks */,
+				88C25AAF740748225C6CDE24 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FE31CC1B4ACF0900822693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AC12FF0D44A56B5E5E8ECFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69AE6A561B4F0FAE00257891 /* libopusPhone.a */,
+				69AE6A541B4F0FA800257891 /* libopusComputer.a */,
+				69489B571B4EFC65005E92E9 /* libopus2.a */,
+				69489B4F1B4DE06A005E92E9 /* libopus.a */,
+				AB98E87E2FEA400697199CCB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69AE6A591B4F105D00257891 /* sending */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31F41B4BB20B00822693 /* EncodedAudioCapture.swift */,
+				69FE31F81B4C189700822693 /* AudioEncoder.swift */,
+			);
+			name = sending;
+			sourceTree = "<group>";
+		};
+		69AE6A5A1B4F107200257891 /* receiving */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31FE1B4C2D5F00822693 /* JitterBuffer.swift */,
+				69FE31FC1B4C195C00822693 /* EncodedAudioPlayer.swift */,
+				69FE31FA1B4C18A600822693 /* AudioDecoder.swift */,
+			);
+			name = receiving;
+			sourceTree = "<group>";
+		};
+		69AE6A5B1B4F10A200257891 /* patterns */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31F01B4BB0B900822693 /* ObserverSubject.swift */,
+				69FE31F21B4BB15B00822693 /* Observer.swift */,
+			);
+			name = patterns;
+			sourceTree = "<group>";
+		};
+		69AE6A5C1B4F10C000257891 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				69FE32001B4C4B1400822693 /* TinCanXConstants.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
+		69AE6A5D1B4F117F00257891 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				69AE6A5E1B4F119200257891 /* MessageProtocol.swift */,
+				69AE6A601B4F123600257891 /* VoicePacket.swift */,
+				69AE6A621B4F13D000257891 /* MessageFactory.swift */,
+			);
+			name = messages;
+			sourceTree = "<group>";
+		};
+		69FE31B11B4ACF0800822693 = {
+			isa = PBXGroup;
+			children = (
+				69FE31BC1B4ACF0800822693 /* walkieTest1 */,
+				69FE31D21B4ACF0900822693 /* walkieTest1Tests */,
+				69FE31BB1B4ACF0800822693 /* Products */,
+				E00E18F6D0D8495328F0E97C /* Pods */,
+				3AC12FF0D44A56B5E5E8ECFB /* Frameworks */,
+				69FE31E61B4B001200822693 /* walkieTest1-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		69FE31BB1B4ACF0800822693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31BA1B4ACF0800822693 /* walkieTest1.app */,
+				69FE31CF1B4ACF0900822693 /* walkieTest1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FE31BC1B4ACF0800822693 /* walkieTest1 */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31E11B4AD59A00822693 /* lib */,
+				69FE31BF1B4ACF0800822693 /* AppDelegate.swift */,
+				69FE31C11B4ACF0800822693 /* ViewController.swift */,
+				69FE31C31B4ACF0800822693 /* Main.storyboard */,
+				69FE31DF1B4AD1CE00822693 /* MainViewController.swift */,
+				69FE31C61B4ACF0800822693 /* Images.xcassets */,
+				69FE31C81B4ACF0800822693 /* LaunchScreen.xib */,
+				69FE31BD1B4ACF0800822693 /* Supporting Files */,
+			);
+			path = walkieTest1;
+			sourceTree = "<group>";
+		};
+		69FE31BD1B4ACF0800822693 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31BE1B4ACF0800822693 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69FE31D21B4ACF0900822693 /* walkieTest1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31D51B4ACF0900822693 /* walkieTest1Tests.swift */,
+				69FE31D31B4ACF0900822693 /* Supporting Files */,
+			);
+			path = walkieTest1Tests;
+			sourceTree = "<group>";
+		};
+		69FE31D31B4ACF0900822693 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31D41B4ACF0900822693 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69FE31E11B4AD59A00822693 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				69FE31EF1B4BAFFC00822693 /* lib */,
+				69FE31F61B4BB75400822693 /* TinCanXProtocol.swift */,
+				69FE31ED1B4BAFF100822693 /* TinCanX.swift */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		69FE31EF1B4BAFFC00822693 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				69AE6A5D1B4F117F00257891 /* messages */,
+				69AE6A5C1B4F10C000257891 /* constants */,
+				69AE6A5B1B4F10A200257891 /* patterns */,
+				69AE6A5A1B4F107200257891 /* receiving */,
+				69AE6A591B4F105D00257891 /* sending */,
+				69FE32061B4D8CCA00822693 /* codecs */,
+				69FE31E91B4B032D00822693 /* Communicator.swift */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		69FE32061B4D8CCA00822693 /* codecs */ = {
+			isa = PBXGroup;
+			children = (
+				69FE32071B4D8CDC00822693 /* OpusCodec.swift */,
+				69489B531B4EC49D005E92E9 /* CodecProtocol.swift */,
+			);
+			name = codecs;
+			sourceTree = "<group>";
+		};
+		E00E18F6D0D8495328F0E97C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F19E585C668750AE4A9CB12B /* Pods.debug.xcconfig */,
+				4FC91F0C718384440CD84198 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69FE31B91B4ACF0800822693 /* walkieTest1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FE31D91B4ACF0900822693 /* Build configuration list for PBXNativeTarget "walkieTest1" */;
+			buildPhases = (
+				79D60BFBBE58AFFC3D5C7088 /* Check Pods Manifest.lock */,
+				69FE31B61B4ACF0800822693 /* Sources */,
+				69FE31B71B4ACF0800822693 /* Frameworks */,
+				69FE31B81B4ACF0800822693 /* Resources */,
+				BAD4B7A7482B7AFB3C68C5F8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walkieTest1;
+			productName = walkieTest1;
+			productReference = 69FE31BA1B4ACF0800822693 /* walkieTest1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69FE31CE1B4ACF0900822693 /* walkieTest1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FE31DC1B4ACF0900822693 /* Build configuration list for PBXNativeTarget "walkieTest1Tests" */;
+			buildPhases = (
+				69FE31CB1B4ACF0900822693 /* Sources */,
+				69FE31CC1B4ACF0900822693 /* Frameworks */,
+				69FE31CD1B4ACF0900822693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69FE31D11B4ACF0900822693 /* PBXTargetDependency */,
+			);
+			name = walkieTest1Tests;
+			productName = walkieTest1Tests;
+			productReference = 69FE31CF1B4ACF0900822693 /* walkieTest1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69FE31B21B4ACF0800822693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Scott Lobdell";
+				TargetAttributes = {
+					69FE31B91B4ACF0800822693 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DGCNP7SZTF;
+					};
+					69FE31CE1B4ACF0900822693 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 69FE31B91B4ACF0800822693;
+					};
+				};
+			};
+			buildConfigurationList = 69FE31B51B4ACF0800822693 /* Build configuration list for PBXProject "walkieTest1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69FE31B11B4ACF0800822693;
+			productRefGroup = 69FE31BB1B4ACF0800822693 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69FE31B91B4ACF0800822693 /* walkieTest1 */,
+				69FE31CE1B4ACF0900822693 /* walkieTest1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69FE31B81B4ACF0800822693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FE31C51B4ACF0800822693 /* Main.storyboard in Resources */,
+				69FE31CA1B4ACF0800822693 /* LaunchScreen.xib in Resources */,
+				69FE31C71B4ACF0800822693 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FE31CD1B4ACF0900822693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79D60BFBBE58AFFC3D5C7088 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD4B7A7482B7AFB3C68C5F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69FE31B61B4ACF0800822693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FE31EA1B4B032D00822693 /* Communicator.swift in Sources */,
+				69AE6A631B4F13D000257891 /* MessageFactory.swift in Sources */,
+				69FE31F31B4BB15B00822693 /* Observer.swift in Sources */,
+				69FE31E01B4AD1CE00822693 /* MainViewController.swift in Sources */,
+				69AE6A5F1B4F119200257891 /* MessageProtocol.swift in Sources */,
+				69AE6A611B4F123600257891 /* VoicePacket.swift in Sources */,
+				69FE31FB1B4C18A600822693 /* AudioDecoder.swift in Sources */,
+				69FE31F71B4BB75400822693 /* TinCanXProtocol.swift in Sources */,
+				69FE31FF1B4C2D5F00822693 /* JitterBuffer.swift in Sources */,
+				69FE31C21B4ACF0800822693 /* ViewController.swift in Sources */,
+				69FE31F51B4BB20B00822693 /* EncodedAudioCapture.swift in Sources */,
+				69FE31EE1B4BAFF100822693 /* TinCanX.swift in Sources */,
+				69FE32011B4C4B1400822693 /* TinCanXConstants.swift in Sources */,
+				69FE31F91B4C189700822693 /* AudioEncoder.swift in Sources */,
+				69FE31C01B4ACF0800822693 /* AppDelegate.swift in Sources */,
+				69FE31FD1B4C195C00822693 /* EncodedAudioPlayer.swift in Sources */,
+				69FE31F11B4BB0B900822693 /* ObserverSubject.swift in Sources */,
+				69489B541B4EC49D005E92E9 /* CodecProtocol.swift in Sources */,
+				69FE32081B4D8CDC00822693 /* OpusCodec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FE31CB1B4ACF0900822693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FE31D61B4ACF0900822693 /* walkieTest1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69FE31D11B4ACF0900822693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69FE31B91B4ACF0800822693 /* walkieTest1 */;
+			targetProxy = 69FE31D01B4ACF0900822693 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69FE31C31B4ACF0800822693 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69FE31C41B4ACF0800822693 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69FE31C81B4ACF0800822693 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69FE31C91B4ACF0800822693 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69FE31D71B4ACF0900822693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69FE31D81B4ACF0900822693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69FE31DA1B4ACF0900822693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19E585C668750AE4A9CB12B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/PubNub\"",
+					"\"${PODS_ROOT}/Headers/Public/TheAmazingAudioEngine\"",
+					/Users/slobdell/Documents/IOS_shit/walkieTest1/CustomHeaders,
+				);
+				INFOPLIST_FILE = walkieTest1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "walkieTest1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		69FE31DB1B4ACF0900822693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC91F0C718384440CD84198 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/PubNub\"",
+					"\"${PODS_ROOT}/Headers/Public/TheAmazingAudioEngine\"",
+					/Users/slobdell/Documents/IOS_shit/walkieTest1/CustomHeaders,
+				);
+				INFOPLIST_FILE = walkieTest1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "walkieTest1-Bridging-Header.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		69FE31DD1B4ACF0900822693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = walkieTest1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkieTest1.app/walkieTest1";
+			};
+			name = Debug;
+		};
+		69FE31DE1B4ACF0900822693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = walkieTest1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkieTest1.app/walkieTest1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69FE31B51B4ACF0800822693 /* Build configuration list for PBXProject "walkieTest1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FE31D71B4ACF0900822693 /* Debug */,
+				69FE31D81B4ACF0900822693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FE31D91B4ACF0900822693 /* Build configuration list for PBXNativeTarget "walkieTest1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FE31DA1B4ACF0900822693 /* Debug */,
+				69FE31DB1B4ACF0900822693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FE31DC1B4ACF0900822693 /* Build configuration list for PBXNativeTarget "walkieTest1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69FE31DD1B4ACF0900822693 /* Debug */,
+				69FE31DE1B4ACF0900822693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69FE31B21B4ACF0800822693 /* Project object */;
+}

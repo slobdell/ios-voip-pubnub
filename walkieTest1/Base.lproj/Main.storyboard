@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lMa-Cg-f49">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="walkieTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-ew-MDB">
+                                <rect key="frame" x="216" y="50" width="168" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.020100812986998839" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Talk">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfL-ew-MDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="200" id="M7y-ZD-FVd"/>
+                            <constraint firstItem="yfL-ew-MDB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="dY1-vE-8oH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yfL-ew-MDB" secondAttribute="trailing" constant="200" id="kCl-98-IQz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="301"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="4Bu-cS-6PV">
+            <objects>
+                <viewController id="lMa-Cg-f49" customClass="MainViewController" customModule="walkieTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ife-Cb-y6c"/>
+                        <viewControllerLayoutGuide type="bottom" id="VrI-f2-7Vy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VsE-pc-p4n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2C-yU-66K">
+                                <rect key="frame" x="66" y="70" width="468" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.020100812990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Talk">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDown:" destination="lMa-Cg-f49" eventType="touchDown" id="GmH-Xg-RSL"/>
+                                    <action selector="touchRelease:" destination="lMa-Cg-f49" eventType="touchUpInside" id="4tQ-MN-0wN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T2C-yU-66K" firstAttribute="top" secondItem="Ife-Cb-y6c" secondAttribute="bottom" constant="50" id="IsW-16-Yco"/>
+                            <constraint firstItem="T2C-yU-66K" firstAttribute="leading" secondItem="VsE-pc-p4n" secondAttribute="leadingMargin" constant="50" id="aXh-6L-lhH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T2C-yU-66K" secondAttribute="trailing" constant="50" id="dT2-iG-hj9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="talkButton" destination="T2C-yU-66K" id="NxE-Te-K1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2g-QW-zEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="341"/>
+        </scene>
+    </scenes>
+</document>

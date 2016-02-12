@@ -1,0 +1,1930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BB136D718F41C65A64D90E /* PNSubscriberResults.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCB333389486CD42AA82591 /* PNSubscriberResults.h */; };
+		015759ED612B7DA199A7DB30 /* AEAudioUnitChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B05AE4BEE83FB4C9F5EE1E /* AEAudioUnitChannel.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		01B145C054CCD94AB5AD3FB8 /* PNRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AA9F00323A57AFE5B84440 /* PNRequestParameters.m */; };
+		03B2AEEDDD6D9BEB5CCDD7C0 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AE5586F2D82E2A444B9F51 /* DDASLLogger.h */; };
+		03B2E3A9DEB2C72E00B1B430 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F32071A7F24DBC67CF0A40FB /* UIImageView+AFNetworking.h */; };
+		046E48FF00276327655B3279 /* PNHeartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = A817B8DB4647E0FC0A1269F1 /* PNHeartbeat.m */; };
+		04EFC18260A950EAE70C7E51 /* PubNub+Publish.h in Headers */ = {isa = PBXBuildFile; fileRef = FC792DF0A6EBD16E14CCCF82 /* PubNub+Publish.h */; };
+		05CB1F891F89BD4B93621CDA /* PNClientState.m in Sources */ = {isa = PBXBuildFile; fileRef = 802422142FF78B273426A69A /* PNClientState.m */; };
+		0661CFD0B947271A3C406B67 /* PubNub+Core.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C349ED44D7EEC0F47D1343 /* PubNub+Core.m */; };
+		06E292F23AE3210C6600C865 /* PNArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B27A3A1F8F645EFF234D19 /* PNArray.m */; };
+		0A807A5E985991C12F084BBF /* AELimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD94C9619838113F2E6F0B4 /* AELimiter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		0BB51D73B9007B837DD78473 /* PNChannelGroupChannelsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D97F004DF52B7C8E294B04 /* PNChannelGroupChannelsResult.m */; };
+		0C65326AB5BA53456999C1A7 /* PNDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = B6049933A9C1CCCA7B190F2D /* PNDictionary.h */; };
+		103F8069DD5584CDC89076C6 /* PNRemoveDeviceFromAPNSResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1F592F0A89B1FFA2426FC4 /* PNRemoveDeviceFromAPNSResponseParser.h */; };
+		13DADE27B84D1621D18DC938 /* PNClientStateUpdateStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = CB80D079BF65B3D34675814D /* PNClientStateUpdateStatus.m */; };
+		1433CD4108CD858E300D3A83 /* PNStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B802409FD991D7A126815CA /* PNStructures.h */; };
+		16524CCB3D00FD83A805B6E1 /* PubNub+State.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D0FC6F57C3AC6005BBB5E2 /* PubNub+State.m */; };
+		170345374485CFD2CB5B58B4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441119F8BDC682DA09A53141 /* MobileCoreServices.framework */; };
+		1A88976CE811F6347CB611B0 /* PNClientStateParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DC6AC7A83C3A54FA5D1ACC /* PNClientStateParser.h */; };
+		1ABF24747DE0AD28DEF8E064 /* AEUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ED40E7B66A36672FEAB6B6E6 /* AEUtilities.h */; };
+		1B00C200A4C66D7BC6ECC05D /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B698F3551D0318C1D8CF61E /* AFHTTPRequestOperationManager.m */; };
+		1B165A594936A99FD70393A9 /* PNString.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A2F23C1953AAE0DF9134B7 /* PNString.h */; };
+		1B5F1C67ADF551A40971517F /* AEAudioUnitFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA46B16F5F955AD803EC55D /* AEAudioUnitFilter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		1B7C3091F36CC0626F881B34 /* PubNub+Presence.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4FFFDA28FE4558C09A4B92 /* PubNub+Presence.m */; };
+		1BD2E53D9AC60C66D0270A4E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CEF728F169947236455C419 /* AFSecurityPolicy.h */; };
+		1C0CDABEB8AB9D2F51C8B385 /* PNSubscribeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC462C0D8D8FB8969B824F6 /* PNSubscribeStatus.m */; };
+		1CAAA3B688C3A1630B675AEB /* AEAudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE641EAE535E52A94398C41E /* AEAudioFileWriter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		1CF0F50996F9B3A4D7533D4F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC7E8BA1A54BA460BD24446 /* UIActivityIndicatorView+AFNetworking.h */; };
+		1DADA404A367D940BF6C1FEC /* PNErrorStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4526351A05F7D12F5601375B /* PNErrorStatus.m */; };
+		1DD9CF5916E275DDFF896656 /* AEAudioController+AudiobusStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6565929C0A73C2195316784D /* AEAudioController+AudiobusStub.h */; };
+		20661B04A195F988E01F6122 /* PNObjectEventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB50E95F1A2C481B4A82945 /* PNObjectEventListener.h */; };
+		21042242EAB7D81CB6E80733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA199A473ECA2BB861D76534 /* Foundation.framework */; };
+		24370D7609303C5CAFCE5149 /* PNURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 22686A307E34C4F3A4CFE6D3 /* PNURLBuilder.m */; };
+		24B2254F5EFFD8A0A367093B /* PNAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C00EADD3E7A4E0CF11C7F4A /* PNAES.h */; };
+		24B69D8A82C8F49A752254D7 /* PNSubscribeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC9451F64E0807A7B8AB840 /* PNSubscribeParser.h */; };
+		27D66C96DB266BC4D9F83FCB /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B572B5479351F7DCC4D50449 /* DDLogMacros.h */; };
+		2814242714EB9088D287C723 /* PNResult+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FE6A27ECB5CF10952F7E0B /* PNResult+Private.h */; };
+		282C0066EC4766EE829F55A5 /* PNPresenceGlobalHereNowResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AE948A9B8CF84B311BC65A /* PNPresenceGlobalHereNowResult.m */; };
+		290F7C2D644B74276D5A4067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA199A473ECA2BB861D76534 /* Foundation.framework */; };
+		2959051675D5D58702EE402C /* PNStateListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D7678B2046467F15013CD1 /* PNStateListener.h */; };
+		29D8C82845CF57405ED76619 /* PNPushNotificationsAuditParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 12BF0D5E666E0E8CB2904F57 /* PNPushNotificationsAuditParser.h */; };
+		2AC384DF6E5A613FC6452A90 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8C05751716258F12B49890 /* AFSecurityPolicy.m */; };
+		2B04611FDC93A81FE6F84459 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC22D72B06520AD78E5C932 /* AFNetworkReachabilityManager.h */; };
+		2E3CC8B5C76BA92A63FD16EC /* PNPresenceChannelGroupHereNowResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 466975DBACF79F758BB8E920 /* PNPresenceChannelGroupHereNowResult.h */; };
+		2FB5D53FDEB38F27F318F7E6 /* PNResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEEE27CD939B190742787B3 /* PNResult.h */; };
+		312D1CE4A35C6BADBD440CB7 /* PNRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 422EADCB8EEEDF9D33DB7927 /* PNRequestParameters.h */; };
+		3268BC49F38F0EFF8B61502B /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = E21651AE3F97C51CADF1B236 /* TPCircularBuffer+AudioBufferList.h */; };
+		332D027395B5759328034359 /* PNChannelGroupChannelsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = B81F5615FC51605526249A83 /* PNChannelGroupChannelsResult.h */; };
+		3436C57D6A4CA0ED9B3AD024 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 462014B1B77EF0C33E3D64FD /* DDAssertMacros.h */; };
+		34C3DF3FE99C8ACE8F129FF4 /* PNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB324B0E90AEECAD14447B /* PNReachability.m */; };
+		36D23586F3EA67E77CB13C4B /* PNConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B3447F8B01D83ADCB6DB61 /* PNConstants.h */; };
+		3780E7BD9D71885DB8DF74C1 /* AEAudioUnitFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FBDE9344866FBA1FCCE7F9 /* AEAudioUnitFilter.h */; };
+		379D1EC4645DE350C9D6BFFE /* PubNub+Presence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AEA42204F9905A817BB526F /* PubNub+Presence.h */; };
+		37C27F20D9C19D5C8BFAE85E /* PNResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCBAF1A45A349FDF2E784D /* PNResult.m */; };
+		37C855571EFAEE950D1C89BA /* PNHistoryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7100EE61D76BC125838E8959 /* PNHistoryParser.m */; };
+		38B586347070D9B7B41A9951 /* PNHistoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5A05BAF1DABE326F6CA3EA /* PNHistoryResult.m */; };
+		3961ED314CE2244BDBB1D5C8 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63407D5F2BE265CC7D0C17D9 /* AFHTTPRequestOperation.h */; };
+		3C292FD1B016E83C99F0C00D /* PNErrorStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 875DDABA586847A4BA3FF14D /* PNErrorStatus.h */; };
+		3D81145313C4C75753E30239 /* PNMessagePublishParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0E2C9890DAF72A8AA99C16 /* PNMessagePublishParser.h */; };
+		3DE9E5E0DB8A2480B52D1FE0 /* PNChannelClientStateResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A81B63BF7EE3750C3B91858 /* PNChannelClientStateResult.m */; };
+		3E6166F4A0B35BB63EF6121E /* PNPresenceWhereNowParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B29EC270F1DFA088A4947C2C /* PNPresenceWhereNowParser.h */; };
+		3EE6A9C161111A43131ACCB1 /* AEAudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAB2B6897B01480F49030D4 /* AEAudioFilePlayer.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		40588A426DE502178BD5DE8B /* PNSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E86934ADFB02E553984ACBA /* PNSubscriber.h */; };
+		40EE1C70C9C566A2F00283A9 /* PNPresenceWhereNowResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 037665696E99575868D3B9D4 /* PNPresenceWhereNowResult.m */; };
+		4235B2D07734AAE725C0D684 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B94772438FBC44D3E8F48 /* UIProgressView+AFNetworking.h */; };
+		42FC7D6A2475EAB6C2800406 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 67383E6F7DF4756E7FB8D2F4 /* AFURLRequestSerialization.m */; };
+		4328CDE04A49805595CBB54A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A566D0AF37E02F4D804045D9 /* Accelerate.framework */; };
+		4332523C97D240BB3461DFD4 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE76CBCE61A8EAF9C4C162E /* AFNetworking.h */; };
+		43E742EA9D3BF9E41511A3EF /* PNPublishStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C455D36CC943906AA6F236D6 /* PNPublishStatus.m */; };
+		440A694CBA26178777148AEE /* PNRemoveDeviceFromAPNSResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3676B426B50CAEE38DC6BBB8 /* PNRemoveDeviceFromAPNSResponseParser.m */; };
+		474B143E350D25C0213FADFC /* AEAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 395034E58E234E7A48E5EA28 /* AEAudioController.h */; };
+		47F36058432AE6EB75E76C02 /* PNPresenceGlobalHereNowResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FBAC9C742FAC10FB3484B9 /* PNPresenceGlobalHereNowResult.h */; };
+		4A0FD2E552A2C0121A41A1FB /* PNDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DDAC6D2D36B7A646F08716 /* PNDictionary.m */; };
+		4A89CA807F790E2FE6416357 /* PNSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E452DF4FFFEB1CC631FB32F /* PNSubscriber.m */; };
+		4D31A02684FF14E43AEF9783 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 46669B504B36A4C1925998E3 /* AFURLRequestSerialization.h */; };
+		4D6E6A139E3B46FB04FCFC18 /* Pods-PubNub-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36256E023270F0371FEA8BD2 /* Pods-PubNub-dummy.m */; };
+		4D74422BA2B280059BB0D6EA /* AERecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDE21547AE90C997CA5357B /* AERecorder.h */; };
+		4DA7A987FB5F40C9A221664C /* AEBlockChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DE61997744C27AD3CC562794 /* AEBlockChannel.h */; };
+		4E8A391DE816486C00223DEB /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5EC5ABC529E53B38839018 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EB6520BB0CA2B0F6A33D5CD /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5C6408DD69746C193D1E90 /* DDFileLogger.h */; };
+		52C4D123A765485F1C8A08D6 /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E5D6634FB345A6C11685B8 /* AEFloatConverter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		53E1490549F769B173A4D59B /* AEAudioController+Audiobus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A397AE3306228AD2C389C /* AEAudioController+Audiobus.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		548020B6420C003BEDF540D7 /* Pods-CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E241D346303F62AD561AA /* Pods-CocoaLumberjack-dummy.m */; };
+		55CAE63DD433DA401C7AE6DA /* PubNub+APNS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F0651DE1D8CCB835C9ABB /* PubNub+APNS.m */; };
+		5754438E9E3A280ED78221B6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2F8BD6A1677C11769B338E /* AFURLSessionManager.m */; };
+		5776F6D29E789B52A3DD72FB /* PNPresenceHereNowParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F54BB9366B1943E797855852 /* PNPresenceHereNowParser.m */; };
+		577992234E4FA1B3547FAC1A /* PNServiceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A77D6A74F57C8A90B195F2 /* PNServiceData.m */; };
+		57E8606CB8AF5685928D4B84 /* PNLogFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC3C7E36F5E71DAA5DD9C75 /* PNLogFileManager.h */; };
+		588946D93C4ABE84B690DE41 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B54FAFBAC40072C8F7C2A /* AFNetworkReachabilityManager.m */; };
+		5F345AF7580857D818F38D91 /* PNURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BADF48F42CE89847036D64 /* PNURLRequest.m */; };
+		5F6EF6B06E591CEBF741CB9C /* PNString.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ABED21B9D45166E01E156F /* PNString.m */; };
+		6077FF0BE3E78EC4C5EE503A /* PNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D1FBC2AF47EE47F00264E /* PNConfiguration.m */; };
+		6110428F7CF61A42A36E97C3 /* PNAES.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A438C7AD6D1A63A6CC9CCC /* PNAES.m */; };
+		64D8A262F9EB6642D0236DFB /* PNMessagePublishParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3968F33823C7E080155EA885 /* PNMessagePublishParser.m */; };
+		6651F99F485B03D2EB0118AB /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E294E91CC62A60B40F6BF8C /* DDDispatchQueueLogFormatter.h */; };
+		66AFE82422BDADA6ACA12B8B /* PubNub+APNS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9271024328C8C557E28993E8 /* PubNub+APNS.h */; };
+		66D69C7E5C43F94A14686A63 /* PNChannelGroupAuditionParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C36FE38750B580E341C1EA /* PNChannelGroupAuditionParser.h */; };
+		67DCCAB784A2CD32739B13EF /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B61B3DD447337E50334A90EC /* TPCircularBuffer.h */; };
+		6BD54167F54E1C8A52425C3B /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA9057DB47FA33D998B8D1A /* DDASLLogCapture.h */; };
+		6C62252752F5C28B98CECBD7 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 292ACF703D60054A9DEBB5B0 /* UIButton+AFNetworking.m */; };
+		6CD1CFF02D3DE7D430D7ABDC /* PubNub+PresencePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB830896EB0C12EEB28FF8C /* PubNub+PresencePrivate.h */; };
+		6E7E719B4F4C119E5E99BED5 /* PNData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1A21B06C65535B6214FA14 /* PNData.h */; };
+		6F13FCBB6497EEF0EF271D0D /* PubNub+ChannelGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 312EF6CF1BE4D56BD7C79BAA /* PubNub+ChannelGroup.h */; };
+		704AE2CE1D5FF7F6940C743D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA199A473ECA2BB861D76534 /* Foundation.framework */; };
+		719E987F36C30233E272E00B /* PNErrorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B43A66120B32D36BEEAE6D1 /* PNErrorParser.m */; };
+		71C2FD39D84776B4FDEFC2EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA199A473ECA2BB861D76534 /* Foundation.framework */; };
+		724FD5CD3BCD3437062C39E0 /* PNClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C53AC880E84CCAD74E3F3EB /* PNClass.h */; };
+		72B2353755194B02AC3733E8 /* PNServiceData.h in Headers */ = {isa = PBXBuildFile; fileRef = 826BCBAB6ADE12F548C99A3A /* PNServiceData.h */; };
+		73CDAB7D1C4A402C3F0A4487 /* PNHeartbeatParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4882D9A68F4E625E6CA981 /* PNHeartbeatParser.h */; };
+		746677B7BE1B27DC4A0BD81F /* AEBlockChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F10ED5CE0BAC3765F9FFED /* AEBlockChannel.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		7893F6B37186FDEA70863B24 /* PNPublishStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 25CF0D88E40D45DE131531FD /* PNPublishStatus.h */; };
+		78B33C29C9FDD5FC5B3FCB6B /* PNAPNSEnabledChannelsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A0EB4F8234222CB90C82B7 /* PNAPNSEnabledChannelsResult.h */; };
+		78E9D68AEFB3537F38FE3A1F /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7D9D458152F4F9D53B494 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		79D02D91EF1C07E96E6769BD /* PNNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 4649B204E0C7BCA63EA83C24 /* PNNetwork.m */; };
+		7A0018ABAA16E1A45E2CC250 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5183AC88444A23BC86398683 /* AudioToolbox.framework */; };
+		7A666F3EA7EC28A86ECFE16E /* PNPresenceWhereNowParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E821300C174E8B99403A562D /* PNPresenceWhereNowParser.m */; };
+		7AA878D801E9374328056288 /* PNConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = DA86DCC394799C9691AA699E /* PNConfiguration.h */; };
+		7C3E1C49BC9E134AFA54C42A /* AELimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D12897A139FF67E07F9D45C /* AELimiter.h */; };
+		7E525B25D60650FEEC2EEA50 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D41A8E26F1407E3D83820 /* DDLog+LOGV.h */; };
+		804CFEC46C93FA15A72046CA /* PNPresenceWhereNowResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A587E6F286D272E999B28C3D /* PNPresenceWhereNowResult.h */; };
+		809EF78078024C898F12134D /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA442312195D486410C9DBA /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		80A406741586922C2913F15E /* PNChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = CA36D6E1F44E71CE3878C100 /* PNChannel.h */; };
+		80E9C2EC36473B0AE3A546B0 /* AEBlockScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 160EF92F82077D90530BAA12 /* AEBlockScheduler.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		82A392F64FBB5E52B62808AF /* PNStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A33412E3AB217B186D48FC11 /* PNStatus.m */; };
+		830538E6374BEF7DE6D27D31 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D29E4F1E12AC53D5506083 /* UIWebView+AFNetworking.h */; };
+		8340CA28A2E18C9908BD76D7 /* PNReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB9C36F78875DAE42CA46CF /* PNReachability.h */; };
+		84706D7B6EC2CD257FE849B6 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = D7389386D129DDE463391B53 /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		84F4E45E4083EA0E4B4867E2 /* AEMixerBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1CF076503D7D8E371B2EA7 /* AEMixerBuffer.h */; };
+		85B009BDC10299FA7DEACD2C /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5EF543BA9AC22A2B22C75E /* CocoaLumberjack.h */; };
+		87F74E398FAB62DB76FF18BC /* PNConfiguration+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD3BC2652B358D0790F95A5 /* PNConfiguration+Private.h */; };
+		88235C148EE2AEE51A14A07D /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CEDF5D7E6685585B8A2473 /* AFHTTPRequestOperationManager.h */; };
+		887B0F3DC8F752878E9A9FF3 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A96537F54F54123718320 /* AERecorder.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		894C7665A91D03635D1FF3F5 /* PNJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821BF4615CA95DB1BF6B38A /* PNJSON.m */; };
+		8993693CD7A71425A5810631 /* PNAcknowledgmentStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BA4BB04605A62E07CD9FCE /* PNAcknowledgmentStatus.h */; };
+		89AAEA66F2045B243270FDA1 /* PubNub+State.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E12DAEABB49B731913CCE0D /* PubNub+State.h */; };
+		8B3800485B509F3F51956B2D /* PubNub+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E565A8C393C6449CB26285 /* PubNub+History.m */; };
+		8B4132AC2F2CEE377494A8CD /* PNChannelGroupClientStateResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4795CE0C1D17EE9CF8864DF7 /* PNChannelGroupClientStateResult.m */; };
+		8B99A4663C5017BCE9ED3DC7 /* PNTimeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB11EE99DF8ACF8DA99D2E /* PNTimeParser.m */; };
+		8C329DD2FC123CFB092BA0F1 /* AEPlaythroughChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E61E465A995CB272C443C7 /* AEPlaythroughChannel.h */; };
+		8EF443964EEDCB8E434F3378 /* AEAudioFilePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B055EFBE82C96177ABCD21AE /* AEAudioFilePlayer.h */; };
+		901D1B5F8389546698CD4FC1 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 05874A3139FB06D7D2B8318B /* AFURLResponseSerialization.h */; };
+		90F56EDCC338647E2CEDF376 /* AEExpanderFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8FA1732CCC33CFA9BE845C /* AEExpanderFilter.h */; };
+		91121A079BE9C2BB69892305 /* AEAudioFileLoaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F0894000006A1AB892D353 /* AEAudioFileLoaderOperation.h */; };
+		9119685416C7D4C75726EF6B /* AEBlockAudioReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7301C346F08E5969A6A0EB /* AEBlockAudioReceiver.h */; };
+		92D7B3D186A6E93A562D587A /* PNLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A7230222B0F87E1C2A644BB4 /* PNLogger.h */; };
+		936927576A8514DD3A85494E /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C7124F719E64DA290EF14 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93D269FA52419FA5EBBC33F1 /* PNGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C7AFB4AC7A43ED80B219DF /* PNGZIP.h */; };
+		95663B5C76515928C05F46B1 /* PNClientState.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8E5224CBFBEDB93F3DCD94 /* PNClientState.h */; };
+		95DA98C7B194E43C1C2741DD /* PNLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F8709A87A975B7AB62AC3750 /* PNLog.m */; };
+		96294B3F1C80BBEE10E4C4CE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 226DC10FB6A80217AFDDD2A6 /* AFHTTPSessionManager.m */; };
+		9643C457B68C81138D715C5C /* PubNub+Subscribe.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F5D00575E247ABD12132FB /* PubNub+Subscribe.m */; };
+		96820492480EC1381CFB91A0 /* PNAPNSEnabledChannelsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD15680143987AF81775ABD /* PNAPNSEnabledChannelsResult.m */; };
+		96CDE4EBDF0F04616E3024CA /* PNErrorParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADBC8B48497482CD940E028 /* PNErrorParser.h */; };
+		975BB1FC08ACC0DE075DE353 /* PNArray.h in Headers */ = {isa = PBXBuildFile; fileRef = E85B82E45178A4CD66F592B4 /* PNArray.h */; };
+		975DD1E0FC83DFC76855BA70 /* PNSubscriberResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE757D1ED4FFCDD5A4C313 /* PNSubscriberResults.m */; };
+		9797F6ABD709A951FE6EA7FB /* PNTimeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1A1F28AB7BAB0FE75542D /* PNTimeResult.m */; };
+		97E8BE075FFD6742E4921BA5 /* AEExpanderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A625EB22541F6E288D7D6C2D /* AEExpanderFilter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		98EB0DC3A2379D9C4DAF8478 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A959961D4CA1C9F3A09A9B5 /* AEPlaythroughChannel.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		9900403DFD11628F44DA0326 /* PNChannelGroupModificationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F2E807D46C9DF2F374FDB /* PNChannelGroupModificationParser.m */; };
+		99873729E48CD8D5F42B303F /* AEBlockScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4816FC21F2C2CED2408BDA56 /* AEBlockScheduler.h */; };
+		9C00699A94D68DA2C1E7A3CD /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 762871732EAB05EA4D9C50EA /* Pods-AFNetworking-dummy.m */; };
+		9CD55B78F9C71106ACFA9CBD /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B7341FADEF10218C5604917E /* UIRefreshControl+AFNetworking.h */; };
+		9EA38C9F4078FDAE725717EA /* TheAmazingAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E95234A62B67F36B80C48DA /* TheAmazingAudioEngine.h */; };
+		A18041A489E7578F513424B2 /* PNHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBB6F4B41240BC5A9076283 /* PNHelpers.h */; };
+		A1D582E831F6930622EDD3A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0086C4DE7CED91C4BA6A81 /* CoreGraphics.framework */; };
+		A2E28842F194F6E24D52C416 /* PNStateListener.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A81D4310ACB664864038D9 /* PNStateListener.m */; };
+		A338CA726C620162BFD45716 /* PNChannelGroupAuditionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9629104D777B0CF29DDFC8DB /* PNChannelGroupAuditionParser.m */; };
+		A3C8CD71C2E8031C398679EC /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FD2A8549AACCCAB899657120 /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		A491247B825DE908A00035CA /* PubNub+Time.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A3845A434F01AB70D8D0521 /* PubNub+Time.h */; };
+		A523DC4DCB5FD573D3E003A2 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DF295BBAA5051E38243EED8C /* DDMultiFormatter.h */; };
+		A5DC0BA35BF5C643DF749F90 /* PNServiceData+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D00422D484DDBE2365CEE2A3 /* PNServiceData+Private.h */; };
+		A5E587E2372CCDC87E3A8BC3 /* PNLeaveParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D7881EC1FA325C08111F7 /* PNLeaveParser.m */; };
+		A61A7DD3038A405AB3CD36F9 /* PubNub.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AC8E43C0CFA61BC621F03F /* PubNub.h */; };
+		A69B441BBA0E3DA2E453DADD /* PNJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = E85E8503D7A88DC7561F7143 /* PNJSON.h */; };
+		A6F3CAD5B79CB06F511AD33B /* PNPrivateStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 91702928869A54A87269A77D /* PNPrivateStructures.h */; };
+		A7BD33248DCA43B6F846B426 /* PNClientStateUpdateStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D11A164F4BA0C5009DAFD1 /* PNClientStateUpdateStatus.h */; };
+		AB1A005623CC49BBBDE5172E /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BBFB43A335CFEBA0FE158 /* UIProgressView+AFNetworking.m */; };
+		AE7285EF041E406F8D42E314 /* AELimiterFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A77DB91DDEEA6348BE71D2 /* AELimiterFilter.h */; };
+		AEA81E2D28A0CD25E900B7C6 /* AEFloatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 84667CFE8A8AFC6CD4E304B1 /* AEFloatConverter.h */; };
+		B06623F2F7C9D89CBC94D340 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18454C7FEC4C2B7DE88B2397 /* AFURLSessionManager.h */; };
+		B16072C9278E30366B089411 /* PNPushNotificationsAuditParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3337ED2043CC23242F6586 /* PNPushNotificationsAuditParser.m */; };
+		B1F84FE1561782B39A9BCDEA /* PNAcknowledgmentStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F06FF033A6FE624E396DBE8B /* PNAcknowledgmentStatus.m */; };
+		B30442C98B75BFCDF6A18DC2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B21A01D694386C12EA587 /* AFURLResponseSerialization.m */; };
+		B40CC7622D0483BFE3D2416D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B38D5C7AF7EA1D86089E3421 /* AFHTTPRequestOperation.m */; };
+		B4A693ED7DAA38D0CA922306 /* PNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 291D65D73B03B605179F6B9F /* PNData.m */; };
+		B5E7ABB763FB53AE54180C97 /* AEUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = EB6959C0D39F7FC99B659F67 /* AEUtilities.c */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		B6D60B0B747271681585B979 /* PNChannelGroupsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A7322779844DB58A91773044 /* PNChannelGroupsResult.m */; };
+		B6E00EAB9B9BD839241EA75C /* PNSubscribeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A32AE067F15CCBE858CB301 /* PNSubscribeParser.m */; };
+		B9A9E3794B6C576866386CEC /* PNChannelGroupClientStateResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 50018739D5E4F6BE153D6556 /* PNChannelGroupClientStateResult.h */; };
+		B9D6EC559BD42F9A803B394A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 49043C5DC7D6151E853D5141 /* UIWebView+AFNetworking.m */; };
+		BA47F6F623F9EC42DFA096D1 /* PNTimeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A63763C0F6CAB8A9B3AA0189 /* PNTimeParser.h */; };
+		BB30778BFEDFE4814F00E076 /* PNStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = C9249954B1E928C894086E57 /* PNStatus.h */; };
+		BCD94B6231C63882DE3921BE /* PNPresenceHereNowParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 684EEBD5FE5D10BE4E94880E /* PNPresenceHereNowParser.h */; };
+		BCDCFDEB90D436A995760DA0 /* PNSubscribeStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9F6034CBD6912CFAD17610 /* PNSubscribeStatus.h */; };
+		BEA9E2430900CD66FFAA1697 /* PNURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BEEACB3D5EEC24B600096C /* PNURLRequest.h */; };
+		BF75A55D0775EF48460AEA7A /* PNGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B798A01D1FD89A74F467921 /* PNGZIP.m */; };
+		C0122515941AECAEC30DA394 /* PNClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C1C977C53535F970E0B95 /* PNClass.m */; };
+		C0B3290882ECE4175297D3B0 /* PNStatus+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D37E835B8888D824A9003EF /* PNStatus+Private.h */; };
+		C0EB19D63A453BE8183FB74A /* PNNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C5D5726B815CAAA2229F83 /* PNNetwork.h */; };
+		C20416BF543DCD2C17A89343 /* PNErrorCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = B4934FD0BDBAFFFD4B8F177D /* PNErrorCodes.h */; };
+		C3C3908D620B4103BE02789E /* PNParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF4A0774E68A141E97CCEE9 /* PNParser.h */; };
+		C51242C18C5644B0488A3E92 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D705089AB1EB75DA6317E560 /* DDLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C514F746BE4F8E50055175C3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13933369F1CBAC204F3AB2F3 /* AFNetworkActivityIndicatorManager.m */; };
+		C74FC71433929ACBD45F0102 /* PNPushNotificationsStateModificationParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 48609065DCE67838B1F6ECAA /* PNPushNotificationsStateModificationParser.h */; };
+		C7D5A6DD17F45B02BB6EECB3 /* PNURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DC26CE274CFA355B601A4A /* PNURLBuilder.h */; };
+		C80981666322952F5E77FA5C /* PubNub+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B371AE55DC67C8E380B78 /* PubNub+Time.m */; };
+		C89D179B5E51A6A0CDCC5EF5 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980D817ADACF8A9B7BD953E /* DDAbstractDatabaseLogger.h */; };
+		CA604FD88C47EAEF092E7BE0 /* AEAudioController+Audiobus.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8D1C8E3C88EB97C337C5ED /* AEAudioController+Audiobus.h */; };
+		CB5FBDD45E471B777BC609CF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F45B1916539FD20F71C417C /* AFURLConnectionOperation.m */; };
+		CBBF67613FEA292525538CEA /* PNHeartbeatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C997B2BE3014473E0A3FDD93 /* PNHeartbeatParser.m */; };
+		CBC8FAF1921B18039CC3F77C /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FB9AC14475B53B9F6CA30B /* UIRefreshControl+AFNetworking.m */; };
+		CC4F0549A9E67F074A207C4B /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5240C252CD0E9980CAE4EE0D /* AFNetworkActivityIndicatorManager.h */; };
+		CF7A2B8ECF919302E4279386 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA1FB1DAAEE9E473D1B5EC2 /* DDLegacyMacros.h */; };
+		D044AEB91D7CA60268FAF0D9 /* PNHistoryParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9731160292063ADC0FF81FF5 /* PNHistoryParser.h */; };
+		D09E3B6961A1215C07E865CB /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EA53B6A9331D192DA7F99D /* DDLog.h */; };
+		D17925765B07FFFEA209B4A3 /* AEBlockAudioReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC79B1D41C88B52B2982F31 /* AEBlockAudioReceiver.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		D3077140C41E406A319BF067 /* PubNub+Publish.m in Sources */ = {isa = PBXBuildFile; fileRef = D30DFC1ED2D4627DE2D7D61E /* PubNub+Publish.m */; };
+		D474DEE3D1B0699303B51A72 /* PubNub+Subscribe.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2E4169DB61B54BBE7FB338 /* PubNub+Subscribe.h */; };
+		D4D6BAC63B54911A2BDBA402 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A36AD0FC01F03F63276E31AE /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D606ADFA999564A30A7F0431 /* PNChannelClientStateResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D4E507B76A6476AE1DEBC1 /* PNChannelClientStateResult.h */; };
+		D612A070D5FF9ADE39692BE0 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F84C3B088634216C82B411B0 /* UIAlertView+AFNetworking.h */; };
+		D67A042EC58A6738113437AA /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8278B08C5D6FAC393306B5 /* AEAudioController.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		D7913897BF141A3CF2D79847 /* AEMixerBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD22ED291761059929F0102 /* AEMixerBuffer.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		DA891D2AD165C8614BFB384E /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E53B213080F21C319EF9805 /* AFHTTPSessionManager.h */; };
+		DB033DAF98FE904920E6D86A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA199A473ECA2BB861D76534 /* Foundation.framework */; };
+		DB1945888996AF9C4D92B3EE /* PNLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 68770518C51CECB5350974E5 /* PNLog.h */; };
+		DC4E445C33A934AE5C6F214A /* PubNub+History.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C773EB5B1EEF4CB185D89A /* PubNub+History.h */; };
+		DC84139A12974CCD48EA3679 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D015BE9C13B4C5BD14B47C /* Pods-dummy.m */; };
+		DCB81977EE02B0C5D5CFD084 /* PubNub+Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4CF8797C91D5611AB162DC /* PubNub+Core.h */; };
+		DD423F4D819F67EE29B12C34 /* PNLeaveParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B106FEF6E218AC1F7462FB8 /* PNLeaveParser.h */; };
+		DD7014230F454D06569E6B73 /* PubNub+SubscribePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9910D3FDC9166CC667FD5C /* PubNub+SubscribePrivate.h */; };
+		DD981F8E953DCDBC36E58141 /* AEAudioFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4301C5365AE8975709C1CA19 /* AEAudioFileWriter.h */; };
+		DE826DC00A3892A0CCA64927 /* PubNub+CorePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7B6FCED86582FC0C5D32A9 /* PubNub+CorePrivate.h */; };
+		DFC7515C2A442674F3AC4129 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F03AC5AB60DB81110A5C068 /* UIKit+AFNetworking.h */; };
+		E2051E79A6D2EADB4501C405 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3938C4973E418744CF2BAC7F /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E30E7D377595A0B5DFA9D54F /* PNPresenceChannelHereNowResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC4DFF3356F54BD354559A /* PNPresenceChannelHereNowResult.m */; };
+		E3315D3DC0890548D1A8D6A3 /* PNChannelGroupModificationParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C427997328DE2525B9C28A /* PNChannelGroupModificationParser.h */; };
+		E361376F47EFB0E905FD3970 /* PNHistoryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 96982FCF7A192B6EC23C6070 /* PNHistoryResult.h */; };
+		E3953C07D5556DB4B163BA43 /* PNChannelGroupsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C105A550EBF03C90CDE0F4E0 /* PNChannelGroupsResult.h */; };
+		E396DD8BB7045A40E8F3140C /* PNHeartbeat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFD15753755ED9DA6A13A66 /* PNHeartbeat.h */; };
+		E40BD4137C504D6AF1571FC0 /* AEAudioUnitChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D102248FF4C5370D0A997EA /* AEAudioUnitChannel.h */; };
+		E588E14853CAFA5F7098D211 /* AEAudioFileLoaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 67151DC0868D1B309D810D76 /* AEAudioFileLoaderOperation.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		E715F2BAC26B74A086316ECF /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E665C6949C8F5DDC6514A360 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EAE683A5AA3BD774B5D0F012 /* Pods-TheAmazingAudioEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AA7A238FA4A32F64EAFA41 /* Pods-TheAmazingAudioEngine-dummy.m */; };
+		ED449BB9F9BC1D60CF8C57E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13309845A0B7B6362311599 /* Security.framework */; };
+		ED5BAF893B9B4ECF6945C8B4 /* PNLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F4FF53D66CCD570B2FC8C /* PNLogFileManager.m */; };
+		EE12C66C7ED1911347321667 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3DFD04C9E0887A80A9B42D /* UIImageView+AFNetworking.m */; };
+		EE215CF37EBEA0B8A4A7C51A /* PNPresenceChannelHereNowResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F5A26478030440600B1489 /* PNPresenceChannelHereNowResult.h */; };
+		EED6C68D64D10FD4AEE068C1 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F96AE563834CDABBE24ED6 /* UIButton+AFNetworking.h */; };
+		EF098517519A811932F082C7 /* AEBlockFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBB0797AA5628E434566FE6 /* AEBlockFilter.h */; };
+		EF381119B042BC0031785630 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FB95062730271AB4483024 /* UIActivityIndicatorView+AFNetworking.m */; };
+		EF97E7F8A4071C137E557F41 /* PNTimeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = B37B5388AA2EB670E452023E /* PNTimeResult.h */; };
+		EFE5959141F24C44C88D5D8D /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E51BFC65CA6B5CDA48050EC7 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F05A12C74CCFEE24EAC77EE1 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EE4711E3F9F5E091BB64F2 /* UIAlertView+AFNetworking.m */; };
+		F089A93C67CF38159DE48090 /* AEBlockFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 079FEF2D83D46C5FC55F6617 /* AEBlockFilter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		F143B99547AD6850F7BECDD7 /* AELimiterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B18CF201A026271F80E863 /* AELimiterFilter.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=TAAEBuffer -DTPCircularBufferInit=TAAEBufferInit -DTPCircularBufferCleanup=TAAEBufferClean -DTPCircularBufferClear=TAAEBufferClear -DTPCircularBufferTail=TAAEBufferTail -DTPCircularBufferConsume=TAAEBufferConsume -DTPCircularBufferHead=TAAEBufferHead -DTPCircularBufferProduce=TAAEBufferProduce -DTPCircularBufferProduceBytes=TAAEBufferProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=TAAEBufferPrepareEmptyAudioBufferListWithAudioFormat -DTPCircularBufferPrepareEmptyAudioBufferList=TAAEBufferPrepareEmptyBL -DTPCircularBufferProduceAudioBufferList=TAAEBufferProduceBL -DTPCircularBufferCopyAudioBufferList=TAAEBufferCopyBL -DTPCircularBufferNextBufferList=TAAEBufferNextBL -DTPCircularBufferNextBufferListAfter=TAAEBufferNextBLAfter -DTPCircularBufferConsumeNextBufferList=TAAEBufferConsumeBL -DTPCircularBufferConsumeNextBufferListPartial=TAAEBufferConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=TAAEBufferDequeueBLFrames -DTPCircularBufferGetAvailableSpace=TAAEBufferGetAvailableSpace -D_TPCircularBufferPeek=_TAAEBufferPeek -DTPCircularBufferPeek=TAAEBufferPeek -DTPCircularBufferPeekContiguous=TAAEBufferPeekContiguous"; }; };
+		F245AB9C7F7CA86ABB60105B /* PNChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6422589AA96388E379451E9 /* PNChannel.m */; };
+		F28839D1DAE0B76293A1446A /* PNPushNotificationsStateModificationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC9B9DE486CFB544C1A49F8 /* PNPushNotificationsStateModificationParser.m */; };
+		F2B65CD5E4943F69C4B78208 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B77E650BB3293C331661D1F /* SystemConfiguration.framework */; };
+		F3D483EECF7045F760EF72A0 /* PNClientStateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CCF8182F5820D49EAA7422 /* PNClientStateParser.m */; };
+		F461711EDED997615E12409E /* PubNub+ChannelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B4DCA7EB3DD3A261FD76C1 /* PubNub+ChannelGroup.m */; };
+		F4C007D8DBF1BA27B9AB4B17 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B9738EE7D9AFAC0113842CDE /* DDTTYLogger.h */; };
+		F6C7602A603576DC811884BD /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE0672BB788A2404DDF391A /* DDContextFilterLogFormatter.h */; };
+		F7C8E5ED876D5AAD6BC223A8 /* PNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ACFB7B1C34E7597623433C /* PNLogger.m */; };
+		F8F6F586DA46A1EAA0E282A6 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E3DF2AF10FF88B1FFAF157 /* AFURLConnectionOperation.h */; };
+		FF365B805A6B7AB12645F505 /* PNPresenceChannelGroupHereNowResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DDEB0A54D520AFA8C5D8BF /* PNPresenceChannelGroupHereNowResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F3471E7329C1E0EBC7B6202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE69A9E37E8AFB55EF4A835;
+			remoteInfo = "Pods-AFNetworking";
+		};
+		6039FF8B280CB1109D2ABF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D4C15811710CDF2606A96F3;
+			remoteInfo = "Pods-CocoaLumberjack";
+		};
+		863881458816D3C0FC7236F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C40123E858D6552FD1051323;
+			remoteInfo = "Pods-PubNub";
+		};
+		A8A4189A901FDCAB3959A192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D4C15811710CDF2606A96F3;
+			remoteInfo = "Pods-CocoaLumberjack";
+		};
+		AB6DF4EFF2B17FA5C289E8B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE69A9E37E8AFB55EF4A835;
+			remoteInfo = "Pods-AFNetworking";
+		};
+		E9BDDD50C1EA12CD0E492111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE06C09E79A8142C4C300A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA831C8B7AC2C66E6EFD20EA;
+			remoteInfo = "Pods-TheAmazingAudioEngine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00ACFB7B1C34E7597623433C /* PNLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLogger.m; path = PubNub/Misc/Logger/PNLogger.m; sourceTree = "<group>"; };
+		01A77D6A74F57C8A90B195F2 /* PNServiceData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNServiceData.m; path = "PubNub/Data/Service Objects/PNServiceData.m"; sourceTree = "<group>"; };
+		01A786691196FC5EC058A149 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		037665696E99575868D3B9D4 /* PNPresenceWhereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceWhereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceWhereNowResult.m"; sourceTree = "<group>"; };
+		03ABED21B9D45166E01E156F /* PNString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNString.m; path = PubNub/Misc/Helpers/PNString.m; sourceTree = "<group>"; };
+		03B177AA4AFC24D907B9E16C /* Pods-TheAmazingAudioEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheAmazingAudioEngine.xcconfig"; sourceTree = "<group>"; };
+		05874A3139FB06D7D2B8318B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		05AA7A238FA4A32F64EAFA41 /* Pods-TheAmazingAudioEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheAmazingAudioEngine-dummy.m"; sourceTree = "<group>"; };
+		079FEF2D83D46C5FC55F6617 /* AEBlockFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBlockFilter.m; path = TheAmazingAudioEngine/AEBlockFilter.m; sourceTree = "<group>"; };
+		07F10ED5CE0BAC3765F9FFED /* AEBlockChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBlockChannel.m; path = TheAmazingAudioEngine/AEBlockChannel.m; sourceTree = "<group>"; };
+		09C36FE38750B580E341C1EA /* PNChannelGroupAuditionParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupAuditionParser.h; path = PubNub/Network/Parsers/PNChannelGroupAuditionParser.h; sourceTree = "<group>"; };
+		0A32AE067F15CCBE858CB301 /* PNSubscribeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNSubscribeParser.m; path = PubNub/Network/Parsers/PNSubscribeParser.m; sourceTree = "<group>"; };
+		0A3A96537F54F54123718320 /* AERecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AERecorder.m; path = Modules/AERecorder.m; sourceTree = "<group>"; };
+		0B77E650BB3293C331661D1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0DC9B9DE486CFB544C1A49F8 /* PNPushNotificationsStateModificationParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPushNotificationsStateModificationParser.m; path = PubNub/Network/Parsers/PNPushNotificationsStateModificationParser.m; sourceTree = "<group>"; };
+		12BF0D5E666E0E8CB2904F57 /* PNPushNotificationsAuditParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPushNotificationsAuditParser.h; path = PubNub/Network/Parsers/PNPushNotificationsAuditParser.h; sourceTree = "<group>"; };
+		13933369F1CBAC204F3AB2F3 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		160EF92F82077D90530BAA12 /* AEBlockScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBlockScheduler.m; path = TheAmazingAudioEngine/AEBlockScheduler.m; sourceTree = "<group>"; };
+		1790AA7A6DBC66C6E8EF13E2 /* libPods-TheAmazingAudioEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheAmazingAudioEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1821BF4615CA95DB1BF6B38A /* PNJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNJSON.m; path = PubNub/Misc/Helpers/PNJSON.m; sourceTree = "<group>"; };
+		18454C7FEC4C2B7DE88B2397 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		1A959961D4CA1C9F3A09A9B5 /* AEPlaythroughChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEPlaythroughChannel.m; path = Modules/AEPlaythroughChannel.m; sourceTree = "<group>"; };
+		1AC22D72B06520AD78E5C932 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		1AD3BC2652B358D0790F95A5 /* PNConfiguration+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNConfiguration+Private.h"; path = "PubNub/Data/PNConfiguration+Private.h"; sourceTree = "<group>"; };
+		1B2BBFB43A335CFEBA0FE158 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		1CEF728F169947236455C419 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1D9B371AE55DC67C8E380B78 /* PubNub+Time.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+Time.m"; path = "PubNub/Core/PubNub+Time.m"; sourceTree = "<group>"; };
+		1E0B21A01D694386C12EA587 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1E95234A62B67F36B80C48DA /* TheAmazingAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheAmazingAudioEngine.h; path = TheAmazingAudioEngine/TheAmazingAudioEngine.h; sourceTree = "<group>"; };
+		20E5D6634FB345A6C11685B8 /* AEFloatConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEFloatConverter.m; path = TheAmazingAudioEngine/AEFloatConverter.m; sourceTree = "<group>"; };
+		20EE4711E3F9F5E091BB64F2 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		216D41A8E26F1407E3D83820 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		22686A307E34C4F3A4CFE6D3 /* PNURLBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNURLBuilder.m; path = PubNub/Network/PNURLBuilder.m; sourceTree = "<group>"; };
+		226DC10FB6A80217AFDDD2A6 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		22C7AFB4AC7A43ED80B219DF /* PNGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGZIP.h; path = PubNub/Misc/Helpers/PNGZIP.h; sourceTree = "<group>"; };
+		25CF0D88E40D45DE131531FD /* PNPublishStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPublishStatus.h; path = "PubNub/Data/Service Objects/PNPublishStatus.h"; sourceTree = "<group>"; };
+		277A09876387A435F5F7A77D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		291D65D73B03B605179F6B9F /* PNData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNData.m; path = PubNub/Misc/Helpers/PNData.m; sourceTree = "<group>"; };
+		292ACF703D60054A9DEBB5B0 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		29B05AE4BEE83FB4C9F5EE1E /* AEAudioUnitChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioUnitChannel.m; path = TheAmazingAudioEngine/AEAudioUnitChannel.m; sourceTree = "<group>"; };
+		2B1C1C977C53535F970E0B95 /* PNClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNClass.m; path = PubNub/Misc/Helpers/PNClass.m; sourceTree = "<group>"; };
+		2B4882D9A68F4E625E6CA981 /* PNHeartbeatParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHeartbeatParser.h; path = PubNub/Network/Parsers/PNHeartbeatParser.h; sourceTree = "<group>"; };
+		2E452DF4FFFEB1CC631FB32F /* PNSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNSubscriber.m; path = PubNub/Data/Managers/PNSubscriber.m; sourceTree = "<group>"; };
+		2E5EF543BA9AC22A2B22C75E /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		2F45B1916539FD20F71C417C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		312EF6CF1BE4D56BD7C79BAA /* PubNub+ChannelGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+ChannelGroup.h"; path = "PubNub/Core/PubNub+ChannelGroup.h"; sourceTree = "<group>"; };
+		34B3447F8B01D83ADCB6DB61 /* PNConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNConstants.h; path = PubNub/Misc/PNConstants.h; sourceTree = "<group>"; };
+		3512E293B9521C1B792F75A7 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		36256E023270F0371FEA8BD2 /* Pods-PubNub-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PubNub-dummy.m"; sourceTree = "<group>"; };
+		3676B426B50CAEE38DC6BBB8 /* PNRemoveDeviceFromAPNSResponseParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRemoveDeviceFromAPNSResponseParser.m; path = PubNub/Network/Parsers/PNRemoveDeviceFromAPNSResponseParser.m; sourceTree = "<group>"; };
+		36DC6AC7A83C3A54FA5D1ACC /* PNClientStateParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNClientStateParser.h; path = PubNub/Network/Parsers/PNClientStateParser.h; sourceTree = "<group>"; };
+		37F5D00575E247ABD12132FB /* PubNub+Subscribe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+Subscribe.m"; path = "PubNub/Core/PubNub+Subscribe.m"; sourceTree = "<group>"; };
+		3938C4973E418744CF2BAC7F /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		395034E58E234E7A48E5EA28 /* AEAudioController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioController.h; path = TheAmazingAudioEngine/AEAudioController.h; sourceTree = "<group>"; };
+		3968F33823C7E080155EA885 /* PNMessagePublishParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNMessagePublishParser.m; path = PubNub/Network/Parsers/PNMessagePublishParser.m; sourceTree = "<group>"; };
+		3B24F85C95BD0B6921052DD3 /* Pods-PubNub-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PubNub-prefix.pch"; sourceTree = "<group>"; };
+		3B43A66120B32D36BEEAE6D1 /* PNErrorParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNErrorParser.m; path = PubNub/Network/Parsers/PNErrorParser.m; sourceTree = "<group>"; };
+		3DFD15753755ED9DA6A13A66 /* PNHeartbeat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHeartbeat.h; path = PubNub/Data/Managers/PNHeartbeat.h; sourceTree = "<group>"; };
+		3E12DAEABB49B731913CCE0D /* PubNub+State.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+State.h"; path = "PubNub/Core/PubNub+State.h"; sourceTree = "<group>"; };
+		3E86934ADFB02E553984ACBA /* PNSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscriber.h; path = PubNub/Data/Managers/PNSubscriber.h; sourceTree = "<group>"; };
+		3F03AC5AB60DB81110A5C068 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		40FBF040234AC7C148844AAD /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		422EADCB8EEEDF9D33DB7927 /* PNRequestParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRequestParameters.h; path = PubNub/Network/PNRequestParameters.h; sourceTree = "<group>"; };
+		4301C5365AE8975709C1CA19 /* AEAudioFileWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFileWriter.h; path = TheAmazingAudioEngine/AEAudioFileWriter.h; sourceTree = "<group>"; };
+		441119F8BDC682DA09A53141 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		4526351A05F7D12F5601375B /* PNErrorStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNErrorStatus.m; path = "PubNub/Data/Service Objects/PNErrorStatus.m"; sourceTree = "<group>"; };
+		462014B1B77EF0C33E3D64FD /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		4649B204E0C7BCA63EA83C24 /* PNNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNNetwork.m; path = PubNub/Network/PNNetwork.m; sourceTree = "<group>"; };
+		46669B504B36A4C1925998E3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		466975DBACF79F758BB8E920 /* PNPresenceChannelGroupHereNowResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceChannelGroupHereNowResult.h; path = "PubNub/Data/Service Objects/PNPresenceChannelGroupHereNowResult.h"; sourceTree = "<group>"; };
+		46D0FC6F57C3AC6005BBB5E2 /* PubNub+State.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+State.m"; path = "PubNub/Core/PubNub+State.m"; sourceTree = "<group>"; };
+		46FE6A27ECB5CF10952F7E0B /* PNResult+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNResult+Private.h"; path = "PubNub/Data/Service Objects/PNResult+Private.h"; sourceTree = "<group>"; };
+		4795CE0C1D17EE9CF8864DF7 /* PNChannelGroupClientStateResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupClientStateResult.m; path = "PubNub/Data/Service Objects/PNChannelGroupClientStateResult.m"; sourceTree = "<group>"; };
+		47C5D5726B815CAAA2229F83 /* PNNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNNetwork.h; path = PubNub/Network/PNNetwork.h; sourceTree = "<group>"; };
+		4816FC21F2C2CED2408BDA56 /* AEBlockScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBlockScheduler.h; path = TheAmazingAudioEngine/AEBlockScheduler.h; sourceTree = "<group>"; };
+		48609065DCE67838B1F6ECAA /* PNPushNotificationsStateModificationParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPushNotificationsStateModificationParser.h; path = PubNub/Network/Parsers/PNPushNotificationsStateModificationParser.h; sourceTree = "<group>"; };
+		49043C5DC7D6151E853D5141 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		49CCBAF1A45A349FDF2E784D /* PNResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNResult.m; path = "PubNub/Data/Service Objects/PNResult.m"; sourceTree = "<group>"; };
+		49DB324B0E90AEECAD14447B /* PNReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNReachability.m; path = PubNub/Network/PNReachability.m; sourceTree = "<group>"; };
+		4BC3C7E36F5E71DAA5DD9C75 /* PNLogFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLogFileManager.h; path = PubNub/Misc/Logger/PNLogFileManager.h; sourceTree = "<group>"; };
+		4C2E241D346303F62AD561AA /* Pods-CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		4C4FFFDA28FE4558C09A4B92 /* PubNub+Presence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+Presence.m"; path = "PubNub/Core/PubNub+Presence.m"; sourceTree = "<group>"; };
+		4C6A397AE3306228AD2C389C /* AEAudioController+Audiobus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AEAudioController+Audiobus.m"; path = "TheAmazingAudioEngine/AEAudioController+Audiobus.m"; sourceTree = "<group>"; };
+		4CF4A0774E68A141E97CCEE9 /* PNParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNParser.h; path = PubNub/Misc/Protocols/PNParser.h; sourceTree = "<group>"; };
+		4E53B213080F21C319EF9805 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		4F8278B08C5D6FAC393306B5 /* AEAudioController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioController.m; path = TheAmazingAudioEngine/AEAudioController.m; sourceTree = "<group>"; };
+		50018739D5E4F6BE153D6556 /* PNChannelGroupClientStateResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupClientStateResult.h; path = "PubNub/Data/Service Objects/PNChannelGroupClientStateResult.h"; sourceTree = "<group>"; };
+		504B94772438FBC44D3E8F48 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		5183AC88444A23BC86398683 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		5240C252CD0E9980CAE4EE0D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		5AB50E95F1A2C481B4A82945 /* PNObjectEventListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNObjectEventListener.h; path = PubNub/Misc/Protocols/PNObjectEventListener.h; sourceTree = "<group>"; };
+		5AD94C9619838113F2E6F0B4 /* AELimiter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AELimiter.m; path = Modules/AELimiter.m; sourceTree = "<group>"; };
+		5ADBC8B48497482CD940E028 /* PNErrorParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorParser.h; path = PubNub/Network/Parsers/PNErrorParser.h; sourceTree = "<group>"; };
+		5C53AC880E84CCAD74E3F3EB /* PNClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNClass.h; path = PubNub/Misc/Helpers/PNClass.h; sourceTree = "<group>"; };
+		5D5EC5ABC529E53B38839018 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		5DCB11EE99DF8ACF8DA99D2E /* PNTimeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNTimeParser.m; path = PubNub/Network/Parsers/PNTimeParser.m; sourceTree = "<group>"; };
+		5F0086C4DE7CED91C4BA6A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5FE7D9D458152F4F9D53B494 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		63407D5F2BE265CC7D0C17D9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		6565929C0A73C2195316784D /* AEAudioController+AudiobusStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AEAudioController+AudiobusStub.h"; path = "TheAmazingAudioEngine/AEAudioController+AudiobusStub.h"; sourceTree = "<group>"; };
+		66CCF8182F5820D49EAA7422 /* PNClientStateParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNClientStateParser.m; path = PubNub/Network/Parsers/PNClientStateParser.m; sourceTree = "<group>"; };
+		67151DC0868D1B309D810D76 /* AEAudioFileLoaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFileLoaderOperation.m; path = TheAmazingAudioEngine/AEAudioFileLoaderOperation.m; sourceTree = "<group>"; };
+		67383E6F7DF4756E7FB8D2F4 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		684EEBD5FE5D10BE4E94880E /* PNPresenceHereNowParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceHereNowParser.h; path = PubNub/Network/Parsers/PNPresenceHereNowParser.h; sourceTree = "<group>"; };
+		68770518C51CECB5350974E5 /* PNLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLog.h; path = PubNub/Misc/Logger/PNLog.h; sourceTree = "<group>"; };
+		6B802409FD991D7A126815CA /* PNStructures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNStructures.h; path = PubNub/Misc/PNStructures.h; sourceTree = "<group>"; };
+		6C00EADD3E7A4E0CF11C7F4A /* PNAES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAES.h; path = PubNub/Data/PNAES.h; sourceTree = "<group>"; };
+		6D12897A139FF67E07F9D45C /* AELimiter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AELimiter.h; path = Modules/AELimiter.h; sourceTree = "<group>"; };
+		6E294E91CC62A60B40F6BF8C /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		6F2E4169DB61B54BBE7FB338 /* PubNub+Subscribe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Subscribe.h"; path = "PubNub/Core/PubNub+Subscribe.h"; sourceTree = "<group>"; };
+		708D4C9BA1B5C940E5223319 /* Pods-CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		7100EE61D76BC125838E8959 /* PNHistoryParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHistoryParser.m; path = PubNub/Network/Parsers/PNHistoryParser.m; sourceTree = "<group>"; };
+		72D7678B2046467F15013CD1 /* PNStateListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNStateListener.h; path = PubNub/Data/Managers/PNStateListener.h; sourceTree = "<group>"; };
+		72E61E465A995CB272C443C7 /* AEPlaythroughChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEPlaythroughChannel.h; path = Modules/AEPlaythroughChannel.h; sourceTree = "<group>"; };
+		75E565A8C393C6449CB26285 /* PubNub+History.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+History.m"; path = "PubNub/Core/PubNub+History.m"; sourceTree = "<group>"; };
+		762871732EAB05EA4D9C50EA /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		76E1A1F28AB7BAB0FE75542D /* PNTimeResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNTimeResult.m; path = "PubNub/Data/Service Objects/PNTimeResult.m"; sourceTree = "<group>"; };
+		7980D817ADACF8A9B7BD953E /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		7A3845A434F01AB70D8D0521 /* PubNub+Time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Time.h"; path = "PubNub/Core/PubNub+Time.h"; sourceTree = "<group>"; };
+		7CEEE27CD939B190742787B3 /* PNResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNResult.h; path = "PubNub/Data/Service Objects/PNResult.h"; sourceTree = "<group>"; };
+		7D37E835B8888D824A9003EF /* PNStatus+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNStatus+Private.h"; path = "PubNub/Data/Service Objects/PNStatus+Private.h"; sourceTree = "<group>"; };
+		7F1A21B06C65535B6214FA14 /* PNData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNData.h; path = PubNub/Misc/Helpers/PNData.h; sourceTree = "<group>"; };
+		7F8C05751716258F12B49890 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		802422142FF78B273426A69A /* PNClientState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNClientState.m; path = PubNub/Data/Managers/PNClientState.m; sourceTree = "<group>"; };
+		81BA4BB04605A62E07CD9FCE /* PNAcknowledgmentStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAcknowledgmentStatus.h; path = "PubNub/Data/Service Objects/PNAcknowledgmentStatus.h"; sourceTree = "<group>"; };
+		826BCBAB6ADE12F548C99A3A /* PNServiceData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNServiceData.h; path = "PubNub/Data/Service Objects/PNServiceData.h"; sourceTree = "<group>"; };
+		84667CFE8A8AFC6CD4E304B1 /* AEFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEFloatConverter.h; path = TheAmazingAudioEngine/AEFloatConverter.h; sourceTree = "<group>"; };
+		875DDABA586847A4BA3FF14D /* PNErrorStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorStatus.h; path = "PubNub/Data/Service Objects/PNErrorStatus.h"; sourceTree = "<group>"; };
+		87881647A24548F967B155F6 /* Pods-PubNub.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNub.xcconfig"; sourceTree = "<group>"; };
+		894B12650E7B073892E27DF9 /* Pods-TheAmazingAudioEngine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheAmazingAudioEngine-Private.xcconfig"; sourceTree = "<group>"; };
+		89FB9AC14475B53B9F6CA30B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		8AA442312195D486410C9DBA /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		8AE0672BB788A2404DDF391A /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		8B2B54FAFBAC40072C8F7C2A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		8B798A01D1FD89A74F467921 /* PNGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGZIP.m; path = PubNub/Misc/Helpers/PNGZIP.m; sourceTree = "<group>"; };
+		8B9910D3FDC9166CC667FD5C /* PubNub+SubscribePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+SubscribePrivate.h"; path = "PubNub/Core/PubNub+SubscribePrivate.h"; sourceTree = "<group>"; };
+		8C6F4FF53D66CCD570B2FC8C /* PNLogFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLogFileManager.m; path = PubNub/Misc/Logger/PNLogFileManager.m; sourceTree = "<group>"; };
+		8D102248FF4C5370D0A997EA /* AEAudioUnitChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioUnitChannel.h; path = TheAmazingAudioEngine/AEAudioUnitChannel.h; sourceTree = "<group>"; };
+		8EF33D9CF08C25F27B112A68 /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		8FCC4DFF3356F54BD354559A /* PNPresenceChannelHereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceChannelHereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceChannelHereNowResult.m"; sourceTree = "<group>"; };
+		90FBDE9344866FBA1FCCE7F9 /* AEAudioUnitFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioUnitFilter.h; path = TheAmazingAudioEngine/AEAudioUnitFilter.h; sourceTree = "<group>"; };
+		91702928869A54A87269A77D /* PNPrivateStructures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPrivateStructures.h; path = PubNub/Misc/PNPrivateStructures.h; sourceTree = "<group>"; };
+		91D015BE9C13B4C5BD14B47C /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		9271024328C8C557E28993E8 /* PubNub+APNS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+APNS.h"; path = "PubNub/Core/PubNub+APNS.h"; sourceTree = "<group>"; };
+		92F5A26478030440600B1489 /* PNPresenceChannelHereNowResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceChannelHereNowResult.h; path = "PubNub/Data/Service Objects/PNPresenceChannelHereNowResult.h"; sourceTree = "<group>"; };
+		9629104D777B0CF29DDFC8DB /* PNChannelGroupAuditionParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupAuditionParser.m; path = PubNub/Network/Parsers/PNChannelGroupAuditionParser.m; sourceTree = "<group>"; };
+		96982FCF7A192B6EC23C6070 /* PNHistoryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHistoryResult.h; path = "PubNub/Data/Service Objects/PNHistoryResult.h"; sourceTree = "<group>"; };
+		9731160292063ADC0FF81FF5 /* PNHistoryParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHistoryParser.h; path = PubNub/Network/Parsers/PNHistoryParser.h; sourceTree = "<group>"; };
+		99A2F23C1953AAE0DF9134B7 /* PNString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNString.h; path = PubNub/Misc/Helpers/PNString.h; sourceTree = "<group>"; };
+		99F0894000006A1AB892D353 /* AEAudioFileLoaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFileLoaderOperation.h; path = TheAmazingAudioEngine/AEAudioFileLoaderOperation.h; sourceTree = "<group>"; };
+		9A81B63BF7EE3750C3B91858 /* PNChannelClientStateResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelClientStateResult.m; path = "PubNub/Data/Service Objects/PNChannelClientStateResult.m"; sourceTree = "<group>"; };
+		9AEA42204F9905A817BB526F /* PubNub+Presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Presence.h"; path = "PubNub/Core/PubNub+Presence.h"; sourceTree = "<group>"; };
+		9B106FEF6E218AC1F7462FB8 /* PNLeaveParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLeaveParser.h; path = PubNub/Network/Parsers/PNLeaveParser.h; sourceTree = "<group>"; };
+		9B4CF8797C91D5611AB162DC /* PubNub+Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Core.h"; path = "PubNub/Core/PubNub+Core.h"; sourceTree = "<group>"; };
+		9B698F3551D0318C1D8CF61E /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9D8E5224CBFBEDB93F3DCD94 /* PNClientState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNClientState.h; path = PubNub/Data/Managers/PNClientState.h; sourceTree = "<group>"; };
+		9EBE757D1ED4FFCDD5A4C313 /* PNSubscriberResults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNSubscriberResults.m; path = "PubNub/Data/Service Objects/PNSubscriberResults.m"; sourceTree = "<group>"; };
+		9FA1FB1DAAEE9E473D1B5EC2 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		A1BADF48F42CE89847036D64 /* PNURLRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNURLRequest.m; path = PubNub/Misc/Helpers/PNURLRequest.m; sourceTree = "<group>"; };
+		A33412E3AB217B186D48FC11 /* PNStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStatus.m; path = "PubNub/Data/Service Objects/PNStatus.m"; sourceTree = "<group>"; };
+		A36AD0FC01F03F63276E31AE /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		A39D7881EC1FA325C08111F7 /* PNLeaveParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLeaveParser.m; path = PubNub/Network/Parsers/PNLeaveParser.m; sourceTree = "<group>"; };
+		A566D0AF37E02F4D804045D9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		A587E6F286D272E999B28C3D /* PNPresenceWhereNowResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceWhereNowResult.h; path = "PubNub/Data/Service Objects/PNPresenceWhereNowResult.h"; sourceTree = "<group>"; };
+		A625EB22541F6E288D7D6C2D /* AEExpanderFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEExpanderFilter.m; path = Modules/AEExpanderFilter.m; sourceTree = "<group>"; };
+		A63763C0F6CAB8A9B3AA0189 /* PNTimeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNTimeParser.h; path = PubNub/Network/Parsers/PNTimeParser.h; sourceTree = "<group>"; };
+		A7230222B0F87E1C2A644BB4 /* PNLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLogger.h; path = PubNub/Misc/Logger/PNLogger.h; sourceTree = "<group>"; };
+		A7322779844DB58A91773044 /* PNChannelGroupsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupsResult.m; path = "PubNub/Data/Service Objects/PNChannelGroupsResult.m"; sourceTree = "<group>"; };
+		A817B8DB4647E0FC0A1269F1 /* PNHeartbeat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHeartbeat.m; path = PubNub/Data/Managers/PNHeartbeat.m; sourceTree = "<group>"; };
+		A8C349ED44D7EEC0F47D1343 /* PubNub+Core.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+Core.m"; path = "PubNub/Core/PubNub+Core.m"; sourceTree = "<group>"; };
+		A9A438C7AD6D1A63A6CC9CCC /* PNAES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAES.m; path = PubNub/Data/PNAES.m; sourceTree = "<group>"; };
+		AA9619C9E21D7447F17A0ABD /* Pods-CocoaLumberjack-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaLumberjack-Private.xcconfig"; sourceTree = "<group>"; };
+		ABCB333389486CD42AA82591 /* PNSubscriberResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscriberResults.h; path = "PubNub/Data/Service Objects/PNSubscriberResults.h"; sourceTree = "<group>"; };
+		AD8D1C8E3C88EB97C337C5ED /* AEAudioController+Audiobus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AEAudioController+Audiobus.h"; path = "TheAmazingAudioEngine/AEAudioController+Audiobus.h"; sourceTree = "<group>"; };
+		AE8FA1732CCC33CFA9BE845C /* AEExpanderFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEExpanderFilter.h; path = Modules/AEExpanderFilter.h; sourceTree = "<group>"; };
+		AEB830896EB0C12EEB28FF8C /* PubNub+PresencePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+PresencePrivate.h"; path = "PubNub/Core/PubNub+PresencePrivate.h"; sourceTree = "<group>"; };
+		AEBB0797AA5628E434566FE6 /* AEBlockFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBlockFilter.h; path = TheAmazingAudioEngine/AEBlockFilter.h; sourceTree = "<group>"; };
+		B055EFBE82C96177ABCD21AE /* AEAudioFilePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFilePlayer.h; path = TheAmazingAudioEngine/AEAudioFilePlayer.h; sourceTree = "<group>"; };
+		B1AC8E43C0CFA61BC621F03F /* PubNub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PubNub.h; path = PubNub/PubNub.h; sourceTree = "<group>"; };
+		B1D29E4F1E12AC53D5506083 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		B29EC270F1DFA088A4947C2C /* PNPresenceWhereNowParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceWhereNowParser.h; path = PubNub/Network/Parsers/PNPresenceWhereNowParser.h; sourceTree = "<group>"; };
+		B312D924778A55F905DF2D85 /* libPods-PubNub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PubNub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37B5388AA2EB670E452023E /* PNTimeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNTimeResult.h; path = "PubNub/Data/Service Objects/PNTimeResult.h"; sourceTree = "<group>"; };
+		B38D5C7AF7EA1D86089E3421 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		B4934FD0BDBAFFFD4B8F177D /* PNErrorCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNErrorCodes.h; path = PubNub/Misc/PNErrorCodes.h; sourceTree = "<group>"; };
+		B572B5479351F7DCC4D50449 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		B5D11A164F4BA0C5009DAFD1 /* PNClientStateUpdateStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNClientStateUpdateStatus.h; path = "PubNub/Data/Service Objects/PNClientStateUpdateStatus.h"; sourceTree = "<group>"; };
+		B6049933A9C1CCCA7B190F2D /* PNDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNDictionary.h; path = PubNub/Misc/Helpers/PNDictionary.h; sourceTree = "<group>"; };
+		B61B3DD447337E50334A90EC /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer.h; sourceTree = "<group>"; };
+		B6422589AA96388E379451E9 /* PNChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannel.m; path = PubNub/Misc/Helpers/PNChannel.m; sourceTree = "<group>"; };
+		B7341FADEF10218C5604917E /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		B81F5615FC51605526249A83 /* PNChannelGroupChannelsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupChannelsResult.h; path = "PubNub/Data/Service Objects/PNChannelGroupChannelsResult.h"; sourceTree = "<group>"; };
+		B9738EE7D9AFAC0113842CDE /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		BB0E2C9890DAF72A8AA99C16 /* PNMessagePublishParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNMessagePublishParser.h; path = PubNub/Network/Parsers/PNMessagePublishParser.h; sourceTree = "<group>"; };
+		BBC79B1D41C88B52B2982F31 /* AEBlockAudioReceiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBlockAudioReceiver.m; path = TheAmazingAudioEngine/AEBlockAudioReceiver.m; sourceTree = "<group>"; };
+		BBC7E8BA1A54BA460BD24446 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		BFE76CBCE61A8EAF9C4C162E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		C105A550EBF03C90CDE0F4E0 /* PNChannelGroupsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupsResult.h; path = "PubNub/Data/Service Objects/PNChannelGroupsResult.h"; sourceTree = "<group>"; };
+		C455D36CC943906AA6F236D6 /* PNPublishStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPublishStatus.m; path = "PubNub/Data/Service Objects/PNPublishStatus.m"; sourceTree = "<group>"; };
+		C7B27A3A1F8F645EFF234D19 /* PNArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNArray.m; path = PubNub/Misc/Helpers/PNArray.m; sourceTree = "<group>"; };
+		C8010D6F2BF07F211B1BFC1B /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9249954B1E928C894086E57 /* PNStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNStatus.h; path = "PubNub/Data/Service Objects/PNStatus.h"; sourceTree = "<group>"; };
+		C997B2BE3014473E0A3FDD93 /* PNHeartbeatParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHeartbeatParser.m; path = PubNub/Network/Parsers/PNHeartbeatParser.m; sourceTree = "<group>"; };
+		CA199A473ECA2BB861D76534 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CA36D6E1F44E71CE3878C100 /* PNChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannel.h; path = PubNub/Misc/Helpers/PNChannel.h; sourceTree = "<group>"; };
+		CA7301C346F08E5969A6A0EB /* AEBlockAudioReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBlockAudioReceiver.h; path = TheAmazingAudioEngine/AEBlockAudioReceiver.h; sourceTree = "<group>"; };
+		CA9F6034CBD6912CFAD17610 /* PNSubscribeStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscribeStatus.h; path = "PubNub/Data/Service Objects/PNSubscribeStatus.h"; sourceTree = "<group>"; };
+		CB80D079BF65B3D34675814D /* PNClientStateUpdateStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNClientStateUpdateStatus.m; path = "PubNub/Data/Service Objects/PNClientStateUpdateStatus.m"; sourceTree = "<group>"; };
+		CC27AE9C286B0BA875506014 /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		CCAB2B6897B01480F49030D4 /* AEAudioFilePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFilePlayer.m; path = TheAmazingAudioEngine/AEAudioFilePlayer.m; sourceTree = "<group>"; };
+		CD1CF076503D7D8E371B2EA7 /* AEMixerBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEMixerBuffer.h; path = Modules/AEMixerBuffer.h; sourceTree = "<group>"; };
+		CD2F8BD6A1677C11769B338E /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		CD3337ED2043CC23242F6586 /* PNPushNotificationsAuditParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPushNotificationsAuditParser.m; path = PubNub/Network/Parsers/PNPushNotificationsAuditParser.m; sourceTree = "<group>"; };
+		CE7F0651DE1D8CCB835C9ABB /* PubNub+APNS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+APNS.m"; path = "PubNub/Core/PubNub+APNS.m"; sourceTree = "<group>"; };
+		CF5A05BAF1DABE326F6CA3EA /* PNHistoryResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNHistoryResult.m; path = "PubNub/Data/Service Objects/PNHistoryResult.m"; sourceTree = "<group>"; };
+		D00422D484DDBE2365CEE2A3 /* PNServiceData+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PNServiceData+Private.h"; path = "PubNub/Data/Service Objects/PNServiceData+Private.h"; sourceTree = "<group>"; };
+		D0DBD6BB1D06BBB588DFA334 /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		D13309845A0B7B6362311599 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D2C427997328DE2525B9C28A /* PNChannelGroupModificationParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelGroupModificationParser.h; path = PubNub/Network/Parsers/PNChannelGroupModificationParser.h; sourceTree = "<group>"; };
+		D30DFC1ED2D4627DE2D7D61E /* PubNub+Publish.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+Publish.m"; path = "PubNub/Core/PubNub+Publish.m"; sourceTree = "<group>"; };
+		D4B18CF201A026271F80E863 /* AELimiterFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AELimiterFilter.m; path = Modules/AELimiterFilter.m; sourceTree = "<group>"; };
+		D4DDEB0A54D520AFA8C5D8BF /* PNPresenceChannelGroupHereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceChannelGroupHereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceChannelGroupHereNowResult.m"; sourceTree = "<group>"; };
+		D66F2E807D46C9DF2F374FDB /* PNChannelGroupModificationParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupModificationParser.m; path = PubNub/Network/Parsers/PNChannelGroupModificationParser.m; sourceTree = "<group>"; };
+		D705089AB1EB75DA6317E560 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		D7389386D129DDE463391B53 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = "TPCircularBuffer+AudioBufferList.c"; path = "TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		D7BEEACB3D5EEC24B600096C /* PNURLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNURLRequest.h; path = PubNub/Misc/Helpers/PNURLRequest.h; sourceTree = "<group>"; };
+		D7D4E507B76A6476AE1DEBC1 /* PNChannelClientStateResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChannelClientStateResult.h; path = "PubNub/Data/Service Objects/PNChannelClientStateResult.h"; sourceTree = "<group>"; };
+		D9AE948A9B8CF84B311BC65A /* PNPresenceGlobalHereNowResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceGlobalHereNowResult.m; path = "PubNub/Data/Service Objects/PNPresenceGlobalHereNowResult.m"; sourceTree = "<group>"; };
+		D9EA53B6A9331D192DA7F99D /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		DA86DCC394799C9691AA699E /* PNConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNConfiguration.h; path = PubNub/Data/PNConfiguration.h; sourceTree = "<group>"; };
+		DDA9057DB47FA33D998B8D1A /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		DE5C6408DD69746C193D1E90 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		DE61997744C27AD3CC562794 /* AEBlockChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBlockChannel.h; path = TheAmazingAudioEngine/AEBlockChannel.h; sourceTree = "<group>"; };
+		DF295BBAA5051E38243EED8C /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		E1A0EB4F8234222CB90C82B7 /* PNAPNSEnabledChannelsResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNAPNSEnabledChannelsResult.h; path = "PubNub/Data/Service Objects/PNAPNSEnabledChannelsResult.h"; sourceTree = "<group>"; };
+		E1A77DB91DDEEA6348BE71D2 /* AELimiterFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AELimiterFilter.h; path = Modules/AELimiterFilter.h; sourceTree = "<group>"; };
+		E21651AE3F97C51CADF1B236 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		E27D1FBC2AF47EE47F00264E /* PNConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNConfiguration.m; path = PubNub/Data/PNConfiguration.m; sourceTree = "<group>"; };
+		E51BFC65CA6B5CDA48050EC7 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		E5DC26CE274CFA355B601A4A /* PNURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNURLBuilder.h; path = PubNub/Network/PNURLBuilder.h; sourceTree = "<group>"; };
+		E665C6949C8F5DDC6514A360 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		E821300C174E8B99403A562D /* PNPresenceWhereNowParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceWhereNowParser.m; path = PubNub/Network/Parsers/PNPresenceWhereNowParser.m; sourceTree = "<group>"; };
+		E85B82E45178A4CD66F592B4 /* PNArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNArray.h; path = PubNub/Misc/Helpers/PNArray.h; sourceTree = "<group>"; };
+		E85E8503D7A88DC7561F7143 /* PNJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNJSON.h; path = PubNub/Misc/Helpers/PNJSON.h; sourceTree = "<group>"; };
+		E97FF2EAEB67B376F676496B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E9FBAC9C742FAC10FB3484B9 /* PNPresenceGlobalHereNowResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPresenceGlobalHereNowResult.h; path = "PubNub/Data/Service Objects/PNPresenceGlobalHereNowResult.h"; sourceTree = "<group>"; };
+		EAC462C0D8D8FB8969B824F6 /* PNSubscribeStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNSubscribeStatus.m; path = "PubNub/Data/Service Objects/PNSubscribeStatus.m"; sourceTree = "<group>"; };
+		EB6959C0D39F7FC99B659F67 /* AEUtilities.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = AEUtilities.c; path = TheAmazingAudioEngine/AEUtilities.c; sourceTree = "<group>"; };
+		ED1F592F0A89B1FFA2426FC4 /* PNRemoveDeviceFromAPNSResponseParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRemoveDeviceFromAPNSResponseParser.h; path = PubNub/Network/Parsers/PNRemoveDeviceFromAPNSResponseParser.h; sourceTree = "<group>"; };
+		ED40E7B66A36672FEAB6B6E6 /* AEUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEUtilities.h; path = TheAmazingAudioEngine/AEUtilities.h; sourceTree = "<group>"; };
+		ED664F88895A1F2D3E8E6964 /* libPods-CocoaLumberjack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaLumberjack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC9451F64E0807A7B8AB840 /* PNSubscribeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNSubscribeParser.h; path = PubNub/Network/Parsers/PNSubscribeParser.h; sourceTree = "<group>"; };
+		EE641EAE535E52A94398C41E /* AEAudioFileWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFileWriter.m; path = TheAmazingAudioEngine/AEAudioFileWriter.m; sourceTree = "<group>"; };
+		EE8FEBF1E374704D8AB22D34 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBB6F4B41240BC5A9076283 /* PNHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNHelpers.h; path = PubNub/Misc/Helpers/PNHelpers.h; sourceTree = "<group>"; };
+		EF3DFD04C9E0887A80A9B42D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		EF7B6FCED86582FC0C5D32A9 /* PubNub+CorePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+CorePrivate.h"; path = "PubNub/Core/PubNub+CorePrivate.h"; sourceTree = "<group>"; };
+		F06FF033A6FE624E396DBE8B /* PNAcknowledgmentStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAcknowledgmentStatus.m; path = "PubNub/Data/Service Objects/PNAcknowledgmentStatus.m"; sourceTree = "<group>"; };
+		F0CEDF5D7E6685585B8A2473 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F0F96AE563834CDABBE24ED6 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		F0FB95062730271AB4483024 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		F1DDAC6D2D36B7A646F08716 /* PNDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNDictionary.m; path = PubNub/Misc/Helpers/PNDictionary.m; sourceTree = "<group>"; };
+		F1E3DF2AF10FF88B1FFAF157 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F2368E3C6D6FA9B23A49B4FB /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2B4DCA7EB3DD3A261FD76C1 /* PubNub+ChannelGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PubNub+ChannelGroup.m"; path = "PubNub/Core/PubNub+ChannelGroup.m"; sourceTree = "<group>"; };
+		F2D97F004DF52B7C8E294B04 /* PNChannelGroupChannelsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChannelGroupChannelsResult.m; path = "PubNub/Data/Service Objects/PNChannelGroupChannelsResult.m"; sourceTree = "<group>"; };
+		F32071A7F24DBC67CF0A40FB /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		F37A2E95C3FE13BE68DD7F88 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		F4AE5586F2D82E2A444B9F51 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		F4C773EB5B1EEF4CB185D89A /* PubNub+History.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+History.h"; path = "PubNub/Core/PubNub+History.h"; sourceTree = "<group>"; };
+		F54BB9366B1943E797855852 /* PNPresenceHereNowParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPresenceHereNowParser.m; path = PubNub/Network/Parsers/PNPresenceHereNowParser.m; sourceTree = "<group>"; };
+		F5AA9F00323A57AFE5B84440 /* PNRequestParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRequestParameters.m; path = PubNub/Network/PNRequestParameters.m; sourceTree = "<group>"; };
+		F7A81D4310ACB664864038D9 /* PNStateListener.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNStateListener.m; path = PubNub/Data/Managers/PNStateListener.m; sourceTree = "<group>"; };
+		F84C3B088634216C82B411B0 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		F8709A87A975B7AB62AC3750 /* PNLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLog.m; path = PubNub/Misc/Logger/PNLog.m; sourceTree = "<group>"; };
+		F8995CCF99F9B0DA68677F8F /* Pods-TheAmazingAudioEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheAmazingAudioEngine-prefix.pch"; sourceTree = "<group>"; };
+		F91C7124F719E64DA290EF14 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		FAA46B16F5F955AD803EC55D /* AEAudioUnitFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioUnitFilter.m; path = TheAmazingAudioEngine/AEAudioUnitFilter.m; sourceTree = "<group>"; };
+		FC0CE43D49983A72398B961C /* Pods-CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaLumberjack.xcconfig"; sourceTree = "<group>"; };
+		FC792DF0A6EBD16E14CCCF82 /* PubNub+Publish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PubNub+Publish.h"; path = "PubNub/Core/PubNub+Publish.h"; sourceTree = "<group>"; };
+		FCBC6067D92C90FE8347D05C /* Pods-PubNub-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PubNub-Private.xcconfig"; sourceTree = "<group>"; };
+		FD2A8549AACCCAB899657120 /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer.c; sourceTree = "<group>"; };
+		FDB9C36F78875DAE42CA46CF /* PNReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNReachability.h; path = PubNub/Network/PNReachability.h; sourceTree = "<group>"; };
+		FDD15680143987AF81775ABD /* PNAPNSEnabledChannelsResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNAPNSEnabledChannelsResult.m; path = "PubNub/Data/Service Objects/PNAPNSEnabledChannelsResult.m"; sourceTree = "<group>"; };
+		FFD22ED291761059929F0102 /* AEMixerBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEMixerBuffer.m; path = Modules/AEMixerBuffer.m; sourceTree = "<group>"; };
+		FFDE21547AE90C997CA5357B /* AERecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AERecorder.h; path = Modules/AERecorder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327C571691F808934A0A5A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328CDE04A49805595CBB54A /* Accelerate.framework in Frameworks */,
+				7A0018ABAA16E1A45E2CC250 /* AudioToolbox.framework in Frameworks */,
+				71C2FD39D84776B4FDEFC2EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD671D63CAE516B0E904E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB033DAF98FE904920E6D86A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62839ED955272A286B4C7FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D582E831F6930622EDD3A7 /* CoreGraphics.framework in Frameworks */,
+				704AE2CE1D5FF7F6940C743D /* Foundation.framework in Frameworks */,
+				170345374485CFD2CB5B58B4 /* MobileCoreServices.framework in Frameworks */,
+				ED449BB9F9BC1D60CF8C57E9 /* Security.framework in Frameworks */,
+				F2B65CD5E4943F69C4B78208 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C186A933E1D58E99126774D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290F7C2D644B74276D5A4067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AFDEDB9C50E83816755C36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21042242EAB7D81CB6E80733 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BDF023647F09E47EB6AD5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC27AE9C286B0BA875506014 /* Pods-AFNetworking.xcconfig */,
+				8EF33D9CF08C25F27B112A68 /* Pods-AFNetworking-Private.xcconfig */,
+				762871732EAB05EA4D9C50EA /* Pods-AFNetworking-dummy.m */,
+				D0DBD6BB1D06BBB588DFA334 /* Pods-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AFNetworking";
+			sourceTree = "<group>";
+		};
+		094376C276EE1EC92B55F3C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40FBF040234AC7C148844AAD /* Pods-acknowledgements.markdown */,
+				F2368E3C6D6FA9B23A49B4FB /* Pods-acknowledgements.plist */,
+				91D015BE9C13B4C5BD14B47C /* Pods-dummy.m */,
+				3512E293B9521C1B792F75A7 /* Pods-environment.h */,
+				F37A2E95C3FE13BE68DD7F88 /* Pods-resources.sh */,
+				01A786691196FC5EC058A149 /* Pods.debug.xcconfig */,
+				E97FF2EAEB67B376F676496B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		0ECA21BBB7DDDD093F5353D7 = {
+			isa = PBXGroup;
+			children = (
+				277A09876387A435F5F7A77D /* Podfile */,
+				B08C43995758D25A78A488B8 /* Frameworks */,
+				8279A4ECB06CB5E08956C4D5 /* Pods */,
+				AEACFAD751C3115BB9D2907E /* Products */,
+				BD6F2FD1640911C48B83413A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		15B8B90952CF39008A417DCF /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				2E5EF543BA9AC22A2B22C75E /* CocoaLumberjack.h */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		172752D1A7A42994466C180D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A566D0AF37E02F4D804045D9 /* Accelerate.framework */,
+				5183AC88444A23BC86398683 /* AudioToolbox.framework */,
+				5F0086C4DE7CED91C4BA6A81 /* CoreGraphics.framework */,
+				CA199A473ECA2BB861D76534 /* Foundation.framework */,
+				441119F8BDC682DA09A53141 /* MobileCoreServices.framework */,
+				D13309845A0B7B6362311599 /* Security.framework */,
+				0B77E650BB3293C331661D1F /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1E2CB02CCCDD1172FEF9E631 /* PubNub */ = {
+			isa = PBXGroup;
+			children = (
+				6C00EADD3E7A4E0CF11C7F4A /* PNAES.h */,
+				A9A438C7AD6D1A63A6CC9CCC /* PNAES.m */,
+				E1A0EB4F8234222CB90C82B7 /* PNAPNSEnabledChannelsResult.h */,
+				FDD15680143987AF81775ABD /* PNAPNSEnabledChannelsResult.m */,
+				81BA4BB04605A62E07CD9FCE /* PNAcknowledgmentStatus.h */,
+				F06FF033A6FE624E396DBE8B /* PNAcknowledgmentStatus.m */,
+				E85B82E45178A4CD66F592B4 /* PNArray.h */,
+				C7B27A3A1F8F645EFF234D19 /* PNArray.m */,
+				CA36D6E1F44E71CE3878C100 /* PNChannel.h */,
+				B6422589AA96388E379451E9 /* PNChannel.m */,
+				D7D4E507B76A6476AE1DEBC1 /* PNChannelClientStateResult.h */,
+				9A81B63BF7EE3750C3B91858 /* PNChannelClientStateResult.m */,
+				09C36FE38750B580E341C1EA /* PNChannelGroupAuditionParser.h */,
+				9629104D777B0CF29DDFC8DB /* PNChannelGroupAuditionParser.m */,
+				B81F5615FC51605526249A83 /* PNChannelGroupChannelsResult.h */,
+				F2D97F004DF52B7C8E294B04 /* PNChannelGroupChannelsResult.m */,
+				50018739D5E4F6BE153D6556 /* PNChannelGroupClientStateResult.h */,
+				4795CE0C1D17EE9CF8864DF7 /* PNChannelGroupClientStateResult.m */,
+				D2C427997328DE2525B9C28A /* PNChannelGroupModificationParser.h */,
+				D66F2E807D46C9DF2F374FDB /* PNChannelGroupModificationParser.m */,
+				C105A550EBF03C90CDE0F4E0 /* PNChannelGroupsResult.h */,
+				A7322779844DB58A91773044 /* PNChannelGroupsResult.m */,
+				5C53AC880E84CCAD74E3F3EB /* PNClass.h */,
+				2B1C1C977C53535F970E0B95 /* PNClass.m */,
+				9D8E5224CBFBEDB93F3DCD94 /* PNClientState.h */,
+				802422142FF78B273426A69A /* PNClientState.m */,
+				36DC6AC7A83C3A54FA5D1ACC /* PNClientStateParser.h */,
+				66CCF8182F5820D49EAA7422 /* PNClientStateParser.m */,
+				B5D11A164F4BA0C5009DAFD1 /* PNClientStateUpdateStatus.h */,
+				CB80D079BF65B3D34675814D /* PNClientStateUpdateStatus.m */,
+				DA86DCC394799C9691AA699E /* PNConfiguration.h */,
+				E27D1FBC2AF47EE47F00264E /* PNConfiguration.m */,
+				1AD3BC2652B358D0790F95A5 /* PNConfiguration+Private.h */,
+				34B3447F8B01D83ADCB6DB61 /* PNConstants.h */,
+				7F1A21B06C65535B6214FA14 /* PNData.h */,
+				291D65D73B03B605179F6B9F /* PNData.m */,
+				B6049933A9C1CCCA7B190F2D /* PNDictionary.h */,
+				F1DDAC6D2D36B7A646F08716 /* PNDictionary.m */,
+				B4934FD0BDBAFFFD4B8F177D /* PNErrorCodes.h */,
+				5ADBC8B48497482CD940E028 /* PNErrorParser.h */,
+				3B43A66120B32D36BEEAE6D1 /* PNErrorParser.m */,
+				875DDABA586847A4BA3FF14D /* PNErrorStatus.h */,
+				4526351A05F7D12F5601375B /* PNErrorStatus.m */,
+				22C7AFB4AC7A43ED80B219DF /* PNGZIP.h */,
+				8B798A01D1FD89A74F467921 /* PNGZIP.m */,
+				3DFD15753755ED9DA6A13A66 /* PNHeartbeat.h */,
+				A817B8DB4647E0FC0A1269F1 /* PNHeartbeat.m */,
+				2B4882D9A68F4E625E6CA981 /* PNHeartbeatParser.h */,
+				C997B2BE3014473E0A3FDD93 /* PNHeartbeatParser.m */,
+				EEBB6F4B41240BC5A9076283 /* PNHelpers.h */,
+				9731160292063ADC0FF81FF5 /* PNHistoryParser.h */,
+				7100EE61D76BC125838E8959 /* PNHistoryParser.m */,
+				96982FCF7A192B6EC23C6070 /* PNHistoryResult.h */,
+				CF5A05BAF1DABE326F6CA3EA /* PNHistoryResult.m */,
+				E85E8503D7A88DC7561F7143 /* PNJSON.h */,
+				1821BF4615CA95DB1BF6B38A /* PNJSON.m */,
+				9B106FEF6E218AC1F7462FB8 /* PNLeaveParser.h */,
+				A39D7881EC1FA325C08111F7 /* PNLeaveParser.m */,
+				68770518C51CECB5350974E5 /* PNLog.h */,
+				F8709A87A975B7AB62AC3750 /* PNLog.m */,
+				4BC3C7E36F5E71DAA5DD9C75 /* PNLogFileManager.h */,
+				8C6F4FF53D66CCD570B2FC8C /* PNLogFileManager.m */,
+				A7230222B0F87E1C2A644BB4 /* PNLogger.h */,
+				00ACFB7B1C34E7597623433C /* PNLogger.m */,
+				BB0E2C9890DAF72A8AA99C16 /* PNMessagePublishParser.h */,
+				3968F33823C7E080155EA885 /* PNMessagePublishParser.m */,
+				47C5D5726B815CAAA2229F83 /* PNNetwork.h */,
+				4649B204E0C7BCA63EA83C24 /* PNNetwork.m */,
+				5AB50E95F1A2C481B4A82945 /* PNObjectEventListener.h */,
+				4CF4A0774E68A141E97CCEE9 /* PNParser.h */,
+				466975DBACF79F758BB8E920 /* PNPresenceChannelGroupHereNowResult.h */,
+				D4DDEB0A54D520AFA8C5D8BF /* PNPresenceChannelGroupHereNowResult.m */,
+				92F5A26478030440600B1489 /* PNPresenceChannelHereNowResult.h */,
+				8FCC4DFF3356F54BD354559A /* PNPresenceChannelHereNowResult.m */,
+				E9FBAC9C742FAC10FB3484B9 /* PNPresenceGlobalHereNowResult.h */,
+				D9AE948A9B8CF84B311BC65A /* PNPresenceGlobalHereNowResult.m */,
+				684EEBD5FE5D10BE4E94880E /* PNPresenceHereNowParser.h */,
+				F54BB9366B1943E797855852 /* PNPresenceHereNowParser.m */,
+				B29EC270F1DFA088A4947C2C /* PNPresenceWhereNowParser.h */,
+				E821300C174E8B99403A562D /* PNPresenceWhereNowParser.m */,
+				A587E6F286D272E999B28C3D /* PNPresenceWhereNowResult.h */,
+				037665696E99575868D3B9D4 /* PNPresenceWhereNowResult.m */,
+				91702928869A54A87269A77D /* PNPrivateStructures.h */,
+				25CF0D88E40D45DE131531FD /* PNPublishStatus.h */,
+				C455D36CC943906AA6F236D6 /* PNPublishStatus.m */,
+				12BF0D5E666E0E8CB2904F57 /* PNPushNotificationsAuditParser.h */,
+				CD3337ED2043CC23242F6586 /* PNPushNotificationsAuditParser.m */,
+				48609065DCE67838B1F6ECAA /* PNPushNotificationsStateModificationParser.h */,
+				0DC9B9DE486CFB544C1A49F8 /* PNPushNotificationsStateModificationParser.m */,
+				FDB9C36F78875DAE42CA46CF /* PNReachability.h */,
+				49DB324B0E90AEECAD14447B /* PNReachability.m */,
+				ED1F592F0A89B1FFA2426FC4 /* PNRemoveDeviceFromAPNSResponseParser.h */,
+				3676B426B50CAEE38DC6BBB8 /* PNRemoveDeviceFromAPNSResponseParser.m */,
+				422EADCB8EEEDF9D33DB7927 /* PNRequestParameters.h */,
+				F5AA9F00323A57AFE5B84440 /* PNRequestParameters.m */,
+				7CEEE27CD939B190742787B3 /* PNResult.h */,
+				49CCBAF1A45A349FDF2E784D /* PNResult.m */,
+				46FE6A27ECB5CF10952F7E0B /* PNResult+Private.h */,
+				826BCBAB6ADE12F548C99A3A /* PNServiceData.h */,
+				01A77D6A74F57C8A90B195F2 /* PNServiceData.m */,
+				D00422D484DDBE2365CEE2A3 /* PNServiceData+Private.h */,
+				72D7678B2046467F15013CD1 /* PNStateListener.h */,
+				F7A81D4310ACB664864038D9 /* PNStateListener.m */,
+				C9249954B1E928C894086E57 /* PNStatus.h */,
+				A33412E3AB217B186D48FC11 /* PNStatus.m */,
+				7D37E835B8888D824A9003EF /* PNStatus+Private.h */,
+				99A2F23C1953AAE0DF9134B7 /* PNString.h */,
+				03ABED21B9D45166E01E156F /* PNString.m */,
+				6B802409FD991D7A126815CA /* PNStructures.h */,
+				EDC9451F64E0807A7B8AB840 /* PNSubscribeParser.h */,
+				0A32AE067F15CCBE858CB301 /* PNSubscribeParser.m */,
+				CA9F6034CBD6912CFAD17610 /* PNSubscribeStatus.h */,
+				EAC462C0D8D8FB8969B824F6 /* PNSubscribeStatus.m */,
+				3E86934ADFB02E553984ACBA /* PNSubscriber.h */,
+				2E452DF4FFFEB1CC631FB32F /* PNSubscriber.m */,
+				ABCB333389486CD42AA82591 /* PNSubscriberResults.h */,
+				9EBE757D1ED4FFCDD5A4C313 /* PNSubscriberResults.m */,
+				A63763C0F6CAB8A9B3AA0189 /* PNTimeParser.h */,
+				5DCB11EE99DF8ACF8DA99D2E /* PNTimeParser.m */,
+				B37B5388AA2EB670E452023E /* PNTimeResult.h */,
+				76E1A1F28AB7BAB0FE75542D /* PNTimeResult.m */,
+				E5DC26CE274CFA355B601A4A /* PNURLBuilder.h */,
+				22686A307E34C4F3A4CFE6D3 /* PNURLBuilder.m */,
+				D7BEEACB3D5EEC24B600096C /* PNURLRequest.h */,
+				A1BADF48F42CE89847036D64 /* PNURLRequest.m */,
+				B1AC8E43C0CFA61BC621F03F /* PubNub.h */,
+				9271024328C8C557E28993E8 /* PubNub+APNS.h */,
+				CE7F0651DE1D8CCB835C9ABB /* PubNub+APNS.m */,
+				312EF6CF1BE4D56BD7C79BAA /* PubNub+ChannelGroup.h */,
+				F2B4DCA7EB3DD3A261FD76C1 /* PubNub+ChannelGroup.m */,
+				9B4CF8797C91D5611AB162DC /* PubNub+Core.h */,
+				A8C349ED44D7EEC0F47D1343 /* PubNub+Core.m */,
+				EF7B6FCED86582FC0C5D32A9 /* PubNub+CorePrivate.h */,
+				F4C773EB5B1EEF4CB185D89A /* PubNub+History.h */,
+				75E565A8C393C6449CB26285 /* PubNub+History.m */,
+				9AEA42204F9905A817BB526F /* PubNub+Presence.h */,
+				4C4FFFDA28FE4558C09A4B92 /* PubNub+Presence.m */,
+				AEB830896EB0C12EEB28FF8C /* PubNub+PresencePrivate.h */,
+				FC792DF0A6EBD16E14CCCF82 /* PubNub+Publish.h */,
+				D30DFC1ED2D4627DE2D7D61E /* PubNub+Publish.m */,
+				3E12DAEABB49B731913CCE0D /* PubNub+State.h */,
+				46D0FC6F57C3AC6005BBB5E2 /* PubNub+State.m */,
+				6F2E4169DB61B54BBE7FB338 /* PubNub+Subscribe.h */,
+				37F5D00575E247ABD12132FB /* PubNub+Subscribe.m */,
+				8B9910D3FDC9166CC667FD5C /* PubNub+SubscribePrivate.h */,
+				7A3845A434F01AB70D8D0521 /* PubNub+Time.h */,
+				1D9B371AE55DC67C8E380B78 /* PubNub+Time.m */,
+				5B43912F33B32F9E77DC3EFA /* Support Files */,
+			);
+			path = PubNub;
+			sourceTree = "<group>";
+		};
+		28F320615B56E3244EEB13C5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1AC22D72B06520AD78E5C932 /* AFNetworkReachabilityManager.h */,
+				8B2B54FAFBAC40072C8F7C2A /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		3393DCC93049444B8964E28A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AE0672BB788A2404DDF391A /* DDContextFilterLogFormatter.h */,
+				E51BFC65CA6B5CDA48050EC7 /* DDContextFilterLogFormatter.m */,
+				6E294E91CC62A60B40F6BF8C /* DDDispatchQueueLogFormatter.h */,
+				5FE7D9D458152F4F9D53B494 /* DDDispatchQueueLogFormatter.m */,
+				DF295BBAA5051E38243EED8C /* DDMultiFormatter.h */,
+				E665C6949C8F5DDC6514A360 /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3B1DF314CF0E8183FE10D4DF /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				1CEF728F169947236455C419 /* AFSecurityPolicy.h */,
+				7F8C05751716258F12B49890 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		5B43912F33B32F9E77DC3EFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87881647A24548F967B155F6 /* Pods-PubNub.xcconfig */,
+				FCBC6067D92C90FE8347D05C /* Pods-PubNub-Private.xcconfig */,
+				36256E023270F0371FEA8BD2 /* Pods-PubNub-dummy.m */,
+				3B24F85C95BD0B6921052DD3 /* Pods-PubNub-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PubNub";
+			sourceTree = "<group>";
+		};
+		6EA854F84CCEEB5AB0DCEE41 /* TheAmazingAudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				395034E58E234E7A48E5EA28 /* AEAudioController.h */,
+				4F8278B08C5D6FAC393306B5 /* AEAudioController.m */,
+				AD8D1C8E3C88EB97C337C5ED /* AEAudioController+Audiobus.h */,
+				4C6A397AE3306228AD2C389C /* AEAudioController+Audiobus.m */,
+				6565929C0A73C2195316784D /* AEAudioController+AudiobusStub.h */,
+				99F0894000006A1AB892D353 /* AEAudioFileLoaderOperation.h */,
+				67151DC0868D1B309D810D76 /* AEAudioFileLoaderOperation.m */,
+				B055EFBE82C96177ABCD21AE /* AEAudioFilePlayer.h */,
+				CCAB2B6897B01480F49030D4 /* AEAudioFilePlayer.m */,
+				4301C5365AE8975709C1CA19 /* AEAudioFileWriter.h */,
+				EE641EAE535E52A94398C41E /* AEAudioFileWriter.m */,
+				8D102248FF4C5370D0A997EA /* AEAudioUnitChannel.h */,
+				29B05AE4BEE83FB4C9F5EE1E /* AEAudioUnitChannel.m */,
+				90FBDE9344866FBA1FCCE7F9 /* AEAudioUnitFilter.h */,
+				FAA46B16F5F955AD803EC55D /* AEAudioUnitFilter.m */,
+				CA7301C346F08E5969A6A0EB /* AEBlockAudioReceiver.h */,
+				BBC79B1D41C88B52B2982F31 /* AEBlockAudioReceiver.m */,
+				DE61997744C27AD3CC562794 /* AEBlockChannel.h */,
+				07F10ED5CE0BAC3765F9FFED /* AEBlockChannel.m */,
+				AEBB0797AA5628E434566FE6 /* AEBlockFilter.h */,
+				079FEF2D83D46C5FC55F6617 /* AEBlockFilter.m */,
+				4816FC21F2C2CED2408BDA56 /* AEBlockScheduler.h */,
+				160EF92F82077D90530BAA12 /* AEBlockScheduler.m */,
+				AE8FA1732CCC33CFA9BE845C /* AEExpanderFilter.h */,
+				A625EB22541F6E288D7D6C2D /* AEExpanderFilter.m */,
+				84667CFE8A8AFC6CD4E304B1 /* AEFloatConverter.h */,
+				20E5D6634FB345A6C11685B8 /* AEFloatConverter.m */,
+				6D12897A139FF67E07F9D45C /* AELimiter.h */,
+				5AD94C9619838113F2E6F0B4 /* AELimiter.m */,
+				E1A77DB91DDEEA6348BE71D2 /* AELimiterFilter.h */,
+				D4B18CF201A026271F80E863 /* AELimiterFilter.m */,
+				CD1CF076503D7D8E371B2EA7 /* AEMixerBuffer.h */,
+				FFD22ED291761059929F0102 /* AEMixerBuffer.m */,
+				72E61E465A995CB272C443C7 /* AEPlaythroughChannel.h */,
+				1A959961D4CA1C9F3A09A9B5 /* AEPlaythroughChannel.m */,
+				FFDE21547AE90C997CA5357B /* AERecorder.h */,
+				0A3A96537F54F54123718320 /* AERecorder.m */,
+				EB6959C0D39F7FC99B659F67 /* AEUtilities.c */,
+				ED40E7B66A36672FEAB6B6E6 /* AEUtilities.h */,
+				FD2A8549AACCCAB899657120 /* TPCircularBuffer.c */,
+				B61B3DD447337E50334A90EC /* TPCircularBuffer.h */,
+				D7389386D129DDE463391B53 /* TPCircularBuffer+AudioBufferList.c */,
+				E21651AE3F97C51CADF1B236 /* TPCircularBuffer+AudioBufferList.h */,
+				1E95234A62B67F36B80C48DA /* TheAmazingAudioEngine.h */,
+				E12CACD50181181A621EC86B /* Support Files */,
+			);
+			path = TheAmazingAudioEngine;
+			sourceTree = "<group>";
+		};
+		71D73CA5F187568D58F9FFB0 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				63407D5F2BE265CC7D0C17D9 /* AFHTTPRequestOperation.h */,
+				B38D5C7AF7EA1D86089E3421 /* AFHTTPRequestOperation.m */,
+				F0CEDF5D7E6685585B8A2473 /* AFHTTPRequestOperationManager.h */,
+				9B698F3551D0318C1D8CF61E /* AFHTTPRequestOperationManager.m */,
+				F1E3DF2AF10FF88B1FFAF157 /* AFURLConnectionOperation.h */,
+				2F45B1916539FD20F71C417C /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		7B8D638AC8045BB462F3FCED /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				46669B504B36A4C1925998E3 /* AFURLRequestSerialization.h */,
+				67383E6F7DF4756E7FB8D2F4 /* AFURLRequestSerialization.m */,
+				05874A3139FB06D7D2B8318B /* AFURLResponseSerialization.h */,
+				1E0B21A01D694386C12EA587 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		7E574D91FB17604B91637905 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				4E53B213080F21C319EF9805 /* AFHTTPSessionManager.h */,
+				226DC10FB6A80217AFDDD2A6 /* AFHTTPSessionManager.m */,
+				18454C7FEC4C2B7DE88B2397 /* AFURLSessionManager.h */,
+				CD2F8BD6A1677C11769B338E /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		8279A4ECB06CB5E08956C4D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A76EBA801B1A9626859960BA /* AFNetworking */,
+				B9AC10E26745AF6664EB1B9D /* CocoaLumberjack */,
+				1E2CB02CCCDD1172FEF9E631 /* PubNub */,
+				6EA854F84CCEEB5AB0DCEE41 /* TheAmazingAudioEngine */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F28F3B1F97D03A1FC6EDCD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC0CE43D49983A72398B961C /* Pods-CocoaLumberjack.xcconfig */,
+				AA9619C9E21D7447F17A0ABD /* Pods-CocoaLumberjack-Private.xcconfig */,
+				4C2E241D346303F62AD561AA /* Pods-CocoaLumberjack-dummy.m */,
+				708D4C9BA1B5C940E5223319 /* Pods-CocoaLumberjack-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		8F4D05E4AC44690344BEA433 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DDA9057DB47FA33D998B8D1A /* DDASLLogCapture.h */,
+				F91C7124F719E64DA290EF14 /* DDASLLogCapture.m */,
+				F4AE5586F2D82E2A444B9F51 /* DDASLLogger.h */,
+				5D5EC5ABC529E53B38839018 /* DDASLLogger.m */,
+				7980D817ADACF8A9B7BD953E /* DDAbstractDatabaseLogger.h */,
+				8AA442312195D486410C9DBA /* DDAbstractDatabaseLogger.m */,
+				462014B1B77EF0C33E3D64FD /* DDAssertMacros.h */,
+				DE5C6408DD69746C193D1E90 /* DDFileLogger.h */,
+				3938C4973E418744CF2BAC7F /* DDFileLogger.m */,
+				9FA1FB1DAAEE9E473D1B5EC2 /* DDLegacyMacros.h */,
+				D9EA53B6A9331D192DA7F99D /* DDLog.h */,
+				D705089AB1EB75DA6317E560 /* DDLog.m */,
+				216D41A8E26F1407E3D83820 /* DDLog+LOGV.h */,
+				B572B5479351F7DCC4D50449 /* DDLogMacros.h */,
+				B9738EE7D9AFAC0113842CDE /* DDTTYLogger.h */,
+				A36AD0FC01F03F63276E31AE /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A76EBA801B1A9626859960BA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BFE76CBCE61A8EAF9C4C162E /* AFNetworking.h */,
+				71D73CA5F187568D58F9FFB0 /* NSURLConnection */,
+				7E574D91FB17604B91637905 /* NSURLSession */,
+				28F320615B56E3244EEB13C5 /* Reachability */,
+				3B1DF314CF0E8183FE10D4DF /* Security */,
+				7B8D638AC8045BB462F3FCED /* Serialization */,
+				06BDF023647F09E47EB6AD5B /* Support Files */,
+				F5728AF26AFD7925C45685DC /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		AEACFAD751C3115BB9D2907E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE8FEBF1E374704D8AB22D34 /* libPods.a */,
+				C8010D6F2BF07F211B1BFC1B /* libPods-AFNetworking.a */,
+				ED664F88895A1F2D3E8E6964 /* libPods-CocoaLumberjack.a */,
+				B312D924778A55F905DF2D85 /* libPods-PubNub.a */,
+				1790AA7A6DBC66C6E8EF13E2 /* libPods-TheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B08C43995758D25A78A488B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				172752D1A7A42994466C180D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9AC10E26745AF6664EB1B9D /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				8F4D05E4AC44690344BEA433 /* Core */,
+				15B8B90952CF39008A417DCF /* Default */,
+				3393DCC93049444B8964E28A /* Extensions */,
+				8F28F3B1F97D03A1FC6EDCD6 /* Support Files */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		BD6F2FD1640911C48B83413A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				094376C276EE1EC92B55F3C1 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E12CACD50181181A621EC86B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03B177AA4AFC24D907B9E16C /* Pods-TheAmazingAudioEngine.xcconfig */,
+				894B12650E7B073892E27DF9 /* Pods-TheAmazingAudioEngine-Private.xcconfig */,
+				05AA7A238FA4A32F64EAFA41 /* Pods-TheAmazingAudioEngine-dummy.m */,
+				F8995CCF99F9B0DA68677F8F /* Pods-TheAmazingAudioEngine-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TheAmazingAudioEngine";
+			sourceTree = "<group>";
+		};
+		F5728AF26AFD7925C45685DC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5240C252CD0E9980CAE4EE0D /* AFNetworkActivityIndicatorManager.h */,
+				13933369F1CBAC204F3AB2F3 /* AFNetworkActivityIndicatorManager.m */,
+				BBC7E8BA1A54BA460BD24446 /* UIActivityIndicatorView+AFNetworking.h */,
+				F0FB95062730271AB4483024 /* UIActivityIndicatorView+AFNetworking.m */,
+				F84C3B088634216C82B411B0 /* UIAlertView+AFNetworking.h */,
+				20EE4711E3F9F5E091BB64F2 /* UIAlertView+AFNetworking.m */,
+				F0F96AE563834CDABBE24ED6 /* UIButton+AFNetworking.h */,
+				292ACF703D60054A9DEBB5B0 /* UIButton+AFNetworking.m */,
+				F32071A7F24DBC67CF0A40FB /* UIImageView+AFNetworking.h */,
+				EF3DFD04C9E0887A80A9B42D /* UIImageView+AFNetworking.m */,
+				3F03AC5AB60DB81110A5C068 /* UIKit+AFNetworking.h */,
+				504B94772438FBC44D3E8F48 /* UIProgressView+AFNetworking.h */,
+				1B2BBFB43A335CFEBA0FE158 /* UIProgressView+AFNetworking.m */,
+				B7341FADEF10218C5604917E /* UIRefreshControl+AFNetworking.h */,
+				89FB9AC14475B53B9F6CA30B /* UIRefreshControl+AFNetworking.m */,
+				B1D29E4F1E12AC53D5506083 /* UIWebView+AFNetworking.h */,
+				49043C5DC7D6151E853D5141 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64D80E5B6966799837ABED84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B009BDC10299FA7DEACD2C /* CocoaLumberjack.h in Headers */,
+				6BD54167F54E1C8A52425C3B /* DDASLLogCapture.h in Headers */,
+				03B2AEEDDD6D9BEB5CCDD7C0 /* DDASLLogger.h in Headers */,
+				C89D179B5E51A6A0CDCC5EF5 /* DDAbstractDatabaseLogger.h in Headers */,
+				3436C57D6A4CA0ED9B3AD024 /* DDAssertMacros.h in Headers */,
+				F6C7602A603576DC811884BD /* DDContextFilterLogFormatter.h in Headers */,
+				6651F99F485B03D2EB0118AB /* DDDispatchQueueLogFormatter.h in Headers */,
+				4EB6520BB0CA2B0F6A33D5CD /* DDFileLogger.h in Headers */,
+				CF7A2B8ECF919302E4279386 /* DDLegacyMacros.h in Headers */,
+				7E525B25D60650FEEC2EEA50 /* DDLog+LOGV.h in Headers */,
+				D09E3B6961A1215C07E865CB /* DDLog.h in Headers */,
+				27D66C96DB266BC4D9F83FCB /* DDLogMacros.h in Headers */,
+				A523DC4DCB5FD573D3E003A2 /* DDMultiFormatter.h in Headers */,
+				F4C007D8DBF1BA27B9AB4B17 /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD3BCEC910E56F8D0AB10FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B2254F5EFFD8A0A367093B /* PNAES.h in Headers */,
+				78B33C29C9FDD5FC5B3FCB6B /* PNAPNSEnabledChannelsResult.h in Headers */,
+				8993693CD7A71425A5810631 /* PNAcknowledgmentStatus.h in Headers */,
+				975BB1FC08ACC0DE075DE353 /* PNArray.h in Headers */,
+				80A406741586922C2913F15E /* PNChannel.h in Headers */,
+				D606ADFA999564A30A7F0431 /* PNChannelClientStateResult.h in Headers */,
+				66D69C7E5C43F94A14686A63 /* PNChannelGroupAuditionParser.h in Headers */,
+				332D027395B5759328034359 /* PNChannelGroupChannelsResult.h in Headers */,
+				B9A9E3794B6C576866386CEC /* PNChannelGroupClientStateResult.h in Headers */,
+				E3315D3DC0890548D1A8D6A3 /* PNChannelGroupModificationParser.h in Headers */,
+				E3953C07D5556DB4B163BA43 /* PNChannelGroupsResult.h in Headers */,
+				724FD5CD3BCD3437062C39E0 /* PNClass.h in Headers */,
+				95663B5C76515928C05F46B1 /* PNClientState.h in Headers */,
+				1A88976CE811F6347CB611B0 /* PNClientStateParser.h in Headers */,
+				A7BD33248DCA43B6F846B426 /* PNClientStateUpdateStatus.h in Headers */,
+				87F74E398FAB62DB76FF18BC /* PNConfiguration+Private.h in Headers */,
+				7AA878D801E9374328056288 /* PNConfiguration.h in Headers */,
+				36D23586F3EA67E77CB13C4B /* PNConstants.h in Headers */,
+				6E7E719B4F4C119E5E99BED5 /* PNData.h in Headers */,
+				0C65326AB5BA53456999C1A7 /* PNDictionary.h in Headers */,
+				C20416BF543DCD2C17A89343 /* PNErrorCodes.h in Headers */,
+				96CDE4EBDF0F04616E3024CA /* PNErrorParser.h in Headers */,
+				3C292FD1B016E83C99F0C00D /* PNErrorStatus.h in Headers */,
+				93D269FA52419FA5EBBC33F1 /* PNGZIP.h in Headers */,
+				E396DD8BB7045A40E8F3140C /* PNHeartbeat.h in Headers */,
+				73CDAB7D1C4A402C3F0A4487 /* PNHeartbeatParser.h in Headers */,
+				A18041A489E7578F513424B2 /* PNHelpers.h in Headers */,
+				D044AEB91D7CA60268FAF0D9 /* PNHistoryParser.h in Headers */,
+				E361376F47EFB0E905FD3970 /* PNHistoryResult.h in Headers */,
+				A69B441BBA0E3DA2E453DADD /* PNJSON.h in Headers */,
+				DD423F4D819F67EE29B12C34 /* PNLeaveParser.h in Headers */,
+				DB1945888996AF9C4D92B3EE /* PNLog.h in Headers */,
+				57E8606CB8AF5685928D4B84 /* PNLogFileManager.h in Headers */,
+				92D7B3D186A6E93A562D587A /* PNLogger.h in Headers */,
+				3D81145313C4C75753E30239 /* PNMessagePublishParser.h in Headers */,
+				C0EB19D63A453BE8183FB74A /* PNNetwork.h in Headers */,
+				20661B04A195F988E01F6122 /* PNObjectEventListener.h in Headers */,
+				C3C3908D620B4103BE02789E /* PNParser.h in Headers */,
+				2E3CC8B5C76BA92A63FD16EC /* PNPresenceChannelGroupHereNowResult.h in Headers */,
+				EE215CF37EBEA0B8A4A7C51A /* PNPresenceChannelHereNowResult.h in Headers */,
+				47F36058432AE6EB75E76C02 /* PNPresenceGlobalHereNowResult.h in Headers */,
+				BCD94B6231C63882DE3921BE /* PNPresenceHereNowParser.h in Headers */,
+				3E6166F4A0B35BB63EF6121E /* PNPresenceWhereNowParser.h in Headers */,
+				804CFEC46C93FA15A72046CA /* PNPresenceWhereNowResult.h in Headers */,
+				A6F3CAD5B79CB06F511AD33B /* PNPrivateStructures.h in Headers */,
+				7893F6B37186FDEA70863B24 /* PNPublishStatus.h in Headers */,
+				29D8C82845CF57405ED76619 /* PNPushNotificationsAuditParser.h in Headers */,
+				C74FC71433929ACBD45F0102 /* PNPushNotificationsStateModificationParser.h in Headers */,
+				8340CA28A2E18C9908BD76D7 /* PNReachability.h in Headers */,
+				103F8069DD5584CDC89076C6 /* PNRemoveDeviceFromAPNSResponseParser.h in Headers */,
+				312D1CE4A35C6BADBD440CB7 /* PNRequestParameters.h in Headers */,
+				2814242714EB9088D287C723 /* PNResult+Private.h in Headers */,
+				2FB5D53FDEB38F27F318F7E6 /* PNResult.h in Headers */,
+				A5DC0BA35BF5C643DF749F90 /* PNServiceData+Private.h in Headers */,
+				72B2353755194B02AC3733E8 /* PNServiceData.h in Headers */,
+				2959051675D5D58702EE402C /* PNStateListener.h in Headers */,
+				C0B3290882ECE4175297D3B0 /* PNStatus+Private.h in Headers */,
+				BB30778BFEDFE4814F00E076 /* PNStatus.h in Headers */,
+				1B165A594936A99FD70393A9 /* PNString.h in Headers */,
+				1433CD4108CD858E300D3A83 /* PNStructures.h in Headers */,
+				24B69D8A82C8F49A752254D7 /* PNSubscribeParser.h in Headers */,
+				BCDCFDEB90D436A995760DA0 /* PNSubscribeStatus.h in Headers */,
+				40588A426DE502178BD5DE8B /* PNSubscriber.h in Headers */,
+				00BB136D718F41C65A64D90E /* PNSubscriberResults.h in Headers */,
+				BA47F6F623F9EC42DFA096D1 /* PNTimeParser.h in Headers */,
+				EF97E7F8A4071C137E557F41 /* PNTimeResult.h in Headers */,
+				C7D5A6DD17F45B02BB6EECB3 /* PNURLBuilder.h in Headers */,
+				BEA9E2430900CD66FFAA1697 /* PNURLRequest.h in Headers */,
+				66AFE82422BDADA6ACA12B8B /* PubNub+APNS.h in Headers */,
+				6F13FCBB6497EEF0EF271D0D /* PubNub+ChannelGroup.h in Headers */,
+				DCB81977EE02B0C5D5CFD084 /* PubNub+Core.h in Headers */,
+				DE826DC00A3892A0CCA64927 /* PubNub+CorePrivate.h in Headers */,
+				DC4E445C33A934AE5C6F214A /* PubNub+History.h in Headers */,
+				379D1EC4645DE350C9D6BFFE /* PubNub+Presence.h in Headers */,
+				6CD1CFF02D3DE7D430D7ABDC /* PubNub+PresencePrivate.h in Headers */,
+				04EFC18260A950EAE70C7E51 /* PubNub+Publish.h in Headers */,
+				89AAEA66F2045B243270FDA1 /* PubNub+State.h in Headers */,
+				D474DEE3D1B0699303B51A72 /* PubNub+Subscribe.h in Headers */,
+				DD7014230F454D06569E6B73 /* PubNub+SubscribePrivate.h in Headers */,
+				A491247B825DE908A00035CA /* PubNub+Time.h in Headers */,
+				A61A7DD3038A405AB3CD36F9 /* PubNub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B0DA8E7F17E84A6D435EAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA604FD88C47EAEF092E7BE0 /* AEAudioController+Audiobus.h in Headers */,
+				1DD9CF5916E275DDFF896656 /* AEAudioController+AudiobusStub.h in Headers */,
+				474B143E350D25C0213FADFC /* AEAudioController.h in Headers */,
+				91121A079BE9C2BB69892305 /* AEAudioFileLoaderOperation.h in Headers */,
+				8EF443964EEDCB8E434F3378 /* AEAudioFilePlayer.h in Headers */,
+				DD981F8E953DCDBC36E58141 /* AEAudioFileWriter.h in Headers */,
+				E40BD4137C504D6AF1571FC0 /* AEAudioUnitChannel.h in Headers */,
+				3780E7BD9D71885DB8DF74C1 /* AEAudioUnitFilter.h in Headers */,
+				9119685416C7D4C75726EF6B /* AEBlockAudioReceiver.h in Headers */,
+				4DA7A987FB5F40C9A221664C /* AEBlockChannel.h in Headers */,
+				EF098517519A811932F082C7 /* AEBlockFilter.h in Headers */,
+				99873729E48CD8D5F42B303F /* AEBlockScheduler.h in Headers */,
+				90F56EDCC338647E2CEDF376 /* AEExpanderFilter.h in Headers */,
+				AEA81E2D28A0CD25E900B7C6 /* AEFloatConverter.h in Headers */,
+				7C3E1C49BC9E134AFA54C42A /* AELimiter.h in Headers */,
+				AE7285EF041E406F8D42E314 /* AELimiterFilter.h in Headers */,
+				84F4E45E4083EA0E4B4867E2 /* AEMixerBuffer.h in Headers */,
+				8C329DD2FC123CFB092BA0F1 /* AEPlaythroughChannel.h in Headers */,
+				4D74422BA2B280059BB0D6EA /* AERecorder.h in Headers */,
+				1ABF24747DE0AD28DEF8E064 /* AEUtilities.h in Headers */,
+				3268BC49F38F0EFF8B61502B /* TPCircularBuffer+AudioBufferList.h in Headers */,
+				67DCCAB784A2CD32739B13EF /* TPCircularBuffer.h in Headers */,
+				9EA38C9F4078FDAE725717EA /* TheAmazingAudioEngine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE9204CCE129263BDE99943 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3961ED314CE2244BDBB1D5C8 /* AFHTTPRequestOperation.h in Headers */,
+				88235C148EE2AEE51A14A07D /* AFHTTPRequestOperationManager.h in Headers */,
+				DA891D2AD165C8614BFB384E /* AFHTTPSessionManager.h in Headers */,
+				CC4F0549A9E67F074A207C4B /* AFNetworkActivityIndicatorManager.h in Headers */,
+				2B04611FDC93A81FE6F84459 /* AFNetworkReachabilityManager.h in Headers */,
+				4332523C97D240BB3461DFD4 /* AFNetworking.h in Headers */,
+				1BD2E53D9AC60C66D0270A4E /* AFSecurityPolicy.h in Headers */,
+				F8F6F586DA46A1EAA0E282A6 /* AFURLConnectionOperation.h in Headers */,
+				4D31A02684FF14E43AEF9783 /* AFURLRequestSerialization.h in Headers */,
+				901D1B5F8389546698CD4FC1 /* AFURLResponseSerialization.h in Headers */,
+				B06623F2F7C9D89CBC94D340 /* AFURLSessionManager.h in Headers */,
+				1CF0F50996F9B3A4D7533D4F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				D612A070D5FF9ADE39692BE0 /* UIAlertView+AFNetworking.h in Headers */,
+				EED6C68D64D10FD4AEE068C1 /* UIButton+AFNetworking.h in Headers */,
+				03B2E3A9DEB2C72E00B1B430 /* UIImageView+AFNetworking.h in Headers */,
+				DFC7515C2A442674F3AC4129 /* UIKit+AFNetworking.h in Headers */,
+				4235B2D07734AAE725C0D684 /* UIProgressView+AFNetworking.h in Headers */,
+				9CD55B78F9C71106ACFA9CBD /* UIRefreshControl+AFNetworking.h in Headers */,
+				830538E6374BEF7DE6D27D31 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6FE69A9E37E8AFB55EF4A835 /* Pods-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82262E6650A274649F28E55D /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
+			buildPhases = (
+				338FD612C46B774F6747F774 /* Sources */,
+				62839ED955272A286B4C7FE5 /* Frameworks */,
+				FEE9204CCE129263BDE99943 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AFNetworking";
+			productName = "Pods-AFNetworking";
+			productReference = C8010D6F2BF07F211B1BFC1B /* libPods-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D4C15811710CDF2606A96F3 /* Pods-CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ABF7259CCD309A92DC66E19 /* Build configuration list for PBXNativeTarget "Pods-CocoaLumberjack" */;
+			buildPhases = (
+				E921035F2EA3CC0C766AA8D8 /* Sources */,
+				4BBD671D63CAE516B0E904E6 /* Frameworks */,
+				64D80E5B6966799837ABED84 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CocoaLumberjack";
+			productName = "Pods-CocoaLumberjack";
+			productReference = ED664F88895A1F2D3E8E6964 /* libPods-CocoaLumberjack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C40123E858D6552FD1051323 /* Pods-PubNub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB3EB6EB82A56640DEA3F9C /* Build configuration list for PBXNativeTarget "Pods-PubNub" */;
+			buildPhases = (
+				6006DDB68CF9CEF7FE38296A /* Sources */,
+				9C186A933E1D58E99126774D /* Frameworks */,
+				9CD3BCEC910E56F8D0AB10FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A5A0A88FED40A807B8B0EC /* PBXTargetDependency */,
+				FE1766E046A59CB4D99B79C9 /* PBXTargetDependency */,
+			);
+			name = "Pods-PubNub";
+			productName = "Pods-PubNub";
+			productReference = B312D924778A55F905DF2D85 /* libPods-PubNub.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D057D02265E6CE0BFD4F505D /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72939312B0A3BCF181F53BA0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				FEEC939BBBFB6DA1BBF3F7E4 /* Sources */,
+				D5AFDEDB9C50E83816755C36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75E7293D6122E1B23D3F768B /* PBXTargetDependency */,
+				E31B55087741969CB68CD5D2 /* PBXTargetDependency */,
+				B9D97D70C77A6592A7B9BEA5 /* PBXTargetDependency */,
+				88772856C8AB8BCEE248004C /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = EE8FEBF1E374704D8AB22D34 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA831C8B7AC2C66E6EFD20EA /* Pods-TheAmazingAudioEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230A45F5E6F1D79D632C387B /* Build configuration list for PBXNativeTarget "Pods-TheAmazingAudioEngine" */;
+			buildPhases = (
+				8029CE69A590DDDC68E49695 /* Sources */,
+				327C571691F808934A0A5A17 /* Frameworks */,
+				D4B0DA8E7F17E84A6D435EAE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheAmazingAudioEngine";
+			productName = "Pods-TheAmazingAudioEngine";
+			productReference = 1790AA7A6DBC66C6E8EF13E2 /* libPods-TheAmazingAudioEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDE06C09E79A8142C4C300A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = B0F27E494AB3085E448F575F /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0ECA21BBB7DDDD093F5353D7;
+			productRefGroup = AEACFAD751C3115BB9D2907E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D057D02265E6CE0BFD4F505D /* Pods */,
+				6FE69A9E37E8AFB55EF4A835 /* Pods-AFNetworking */,
+				7D4C15811710CDF2606A96F3 /* Pods-CocoaLumberjack */,
+				C40123E858D6552FD1051323 /* Pods-PubNub */,
+				DA831C8B7AC2C66E6EFD20EA /* Pods-TheAmazingAudioEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		338FD612C46B774F6747F774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40CC7622D0483BFE3D2416D /* AFHTTPRequestOperation.m in Sources */,
+				1B00C200A4C66D7BC6ECC05D /* AFHTTPRequestOperationManager.m in Sources */,
+				96294B3F1C80BBEE10E4C4CE /* AFHTTPSessionManager.m in Sources */,
+				C514F746BE4F8E50055175C3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				588946D93C4ABE84B690DE41 /* AFNetworkReachabilityManager.m in Sources */,
+				2AC384DF6E5A613FC6452A90 /* AFSecurityPolicy.m in Sources */,
+				CB5FBDD45E471B777BC609CF /* AFURLConnectionOperation.m in Sources */,
+				42FC7D6A2475EAB6C2800406 /* AFURLRequestSerialization.m in Sources */,
+				B30442C98B75BFCDF6A18DC2 /* AFURLResponseSerialization.m in Sources */,
+				5754438E9E3A280ED78221B6 /* AFURLSessionManager.m in Sources */,
+				9C00699A94D68DA2C1E7A3CD /* Pods-AFNetworking-dummy.m in Sources */,
+				EF381119B042BC0031785630 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				F05A12C74CCFEE24EAC77EE1 /* UIAlertView+AFNetworking.m in Sources */,
+				6C62252752F5C28B98CECBD7 /* UIButton+AFNetworking.m in Sources */,
+				EE12C66C7ED1911347321667 /* UIImageView+AFNetworking.m in Sources */,
+				AB1A005623CC49BBBDE5172E /* UIProgressView+AFNetworking.m in Sources */,
+				CBC8FAF1921B18039CC3F77C /* UIRefreshControl+AFNetworking.m in Sources */,
+				B9D6EC559BD42F9A803B394A /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6006DDB68CF9CEF7FE38296A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6110428F7CF61A42A36E97C3 /* PNAES.m in Sources */,
+				96820492480EC1381CFB91A0 /* PNAPNSEnabledChannelsResult.m in Sources */,
+				B1F84FE1561782B39A9BCDEA /* PNAcknowledgmentStatus.m in Sources */,
+				06E292F23AE3210C6600C865 /* PNArray.m in Sources */,
+				F245AB9C7F7CA86ABB60105B /* PNChannel.m in Sources */,
+				3DE9E5E0DB8A2480B52D1FE0 /* PNChannelClientStateResult.m in Sources */,
+				A338CA726C620162BFD45716 /* PNChannelGroupAuditionParser.m in Sources */,
+				0BB51D73B9007B837DD78473 /* PNChannelGroupChannelsResult.m in Sources */,
+				8B4132AC2F2CEE377494A8CD /* PNChannelGroupClientStateResult.m in Sources */,
+				9900403DFD11628F44DA0326 /* PNChannelGroupModificationParser.m in Sources */,
+				B6D60B0B747271681585B979 /* PNChannelGroupsResult.m in Sources */,
+				C0122515941AECAEC30DA394 /* PNClass.m in Sources */,
+				05CB1F891F89BD4B93621CDA /* PNClientState.m in Sources */,
+				F3D483EECF7045F760EF72A0 /* PNClientStateParser.m in Sources */,
+				13DADE27B84D1621D18DC938 /* PNClientStateUpdateStatus.m in Sources */,
+				6077FF0BE3E78EC4C5EE503A /* PNConfiguration.m in Sources */,
+				B4A693ED7DAA38D0CA922306 /* PNData.m in Sources */,
+				4A0FD2E552A2C0121A41A1FB /* PNDictionary.m in Sources */,
+				719E987F36C30233E272E00B /* PNErrorParser.m in Sources */,
+				1DADA404A367D940BF6C1FEC /* PNErrorStatus.m in Sources */,
+				BF75A55D0775EF48460AEA7A /* PNGZIP.m in Sources */,
+				046E48FF00276327655B3279 /* PNHeartbeat.m in Sources */,
+				CBBF67613FEA292525538CEA /* PNHeartbeatParser.m in Sources */,
+				37C855571EFAEE950D1C89BA /* PNHistoryParser.m in Sources */,
+				38B586347070D9B7B41A9951 /* PNHistoryResult.m in Sources */,
+				894C7665A91D03635D1FF3F5 /* PNJSON.m in Sources */,
+				A5E587E2372CCDC87E3A8BC3 /* PNLeaveParser.m in Sources */,
+				95DA98C7B194E43C1C2741DD /* PNLog.m in Sources */,
+				ED5BAF893B9B4ECF6945C8B4 /* PNLogFileManager.m in Sources */,
+				F7C8E5ED876D5AAD6BC223A8 /* PNLogger.m in Sources */,
+				64D8A262F9EB6642D0236DFB /* PNMessagePublishParser.m in Sources */,
+				79D02D91EF1C07E96E6769BD /* PNNetwork.m in Sources */,
+				FF365B805A6B7AB12645F505 /* PNPresenceChannelGroupHereNowResult.m in Sources */,
+				E30E7D377595A0B5DFA9D54F /* PNPresenceChannelHereNowResult.m in Sources */,
+				282C0066EC4766EE829F55A5 /* PNPresenceGlobalHereNowResult.m in Sources */,
+				5776F6D29E789B52A3DD72FB /* PNPresenceHereNowParser.m in Sources */,
+				7A666F3EA7EC28A86ECFE16E /* PNPresenceWhereNowParser.m in Sources */,
+				40EE1C70C9C566A2F00283A9 /* PNPresenceWhereNowResult.m in Sources */,
+				43E742EA9D3BF9E41511A3EF /* PNPublishStatus.m in Sources */,
+				B16072C9278E30366B089411 /* PNPushNotificationsAuditParser.m in Sources */,
+				F28839D1DAE0B76293A1446A /* PNPushNotificationsStateModificationParser.m in Sources */,
+				34C3DF3FE99C8ACE8F129FF4 /* PNReachability.m in Sources */,
+				440A694CBA26178777148AEE /* PNRemoveDeviceFromAPNSResponseParser.m in Sources */,
+				01B145C054CCD94AB5AD3FB8 /* PNRequestParameters.m in Sources */,
+				37C27F20D9C19D5C8BFAE85E /* PNResult.m in Sources */,
+				577992234E4FA1B3547FAC1A /* PNServiceData.m in Sources */,
+				A2E28842F194F6E24D52C416 /* PNStateListener.m in Sources */,
+				82A392F64FBB5E52B62808AF /* PNStatus.m in Sources */,
+				5F6EF6B06E591CEBF741CB9C /* PNString.m in Sources */,
+				B6E00EAB9B9BD839241EA75C /* PNSubscribeParser.m in Sources */,
+				1C0CDABEB8AB9D2F51C8B385 /* PNSubscribeStatus.m in Sources */,
+				4A89CA807F790E2FE6416357 /* PNSubscriber.m in Sources */,
+				975DD1E0FC83DFC76855BA70 /* PNSubscriberResults.m in Sources */,
+				8B99A4663C5017BCE9ED3DC7 /* PNTimeParser.m in Sources */,
+				9797F6ABD709A951FE6EA7FB /* PNTimeResult.m in Sources */,
+				24370D7609303C5CAFCE5149 /* PNURLBuilder.m in Sources */,
+				5F345AF7580857D818F38D91 /* PNURLRequest.m in Sources */,
+				4D6E6A139E3B46FB04FCFC18 /* Pods-PubNub-dummy.m in Sources */,
+				55CAE63DD433DA401C7AE6DA /* PubNub+APNS.m in Sources */,
+				F461711EDED997615E12409E /* PubNub+ChannelGroup.m in Sources */,
+				0661CFD0B947271A3C406B67 /* PubNub+Core.m in Sources */,
+				8B3800485B509F3F51956B2D /* PubNub+History.m in Sources */,
+				1B7C3091F36CC0626F881B34 /* PubNub+Presence.m in Sources */,
+				D3077140C41E406A319BF067 /* PubNub+Publish.m in Sources */,
+				16524CCB3D00FD83A805B6E1 /* PubNub+State.m in Sources */,
+				9643C457B68C81138D715C5C /* PubNub+Subscribe.m in Sources */,
+				C80981666322952F5E77FA5C /* PubNub+Time.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8029CE69A590DDDC68E49695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E1490549F769B173A4D59B /* AEAudioController+Audiobus.m in Sources */,
+				D67A042EC58A6738113437AA /* AEAudioController.m in Sources */,
+				E588E14853CAFA5F7098D211 /* AEAudioFileLoaderOperation.m in Sources */,
+				3EE6A9C161111A43131ACCB1 /* AEAudioFilePlayer.m in Sources */,
+				1CAAA3B688C3A1630B675AEB /* AEAudioFileWriter.m in Sources */,
+				015759ED612B7DA199A7DB30 /* AEAudioUnitChannel.m in Sources */,
+				1B5F1C67ADF551A40971517F /* AEAudioUnitFilter.m in Sources */,
+				D17925765B07FFFEA209B4A3 /* AEBlockAudioReceiver.m in Sources */,
+				746677B7BE1B27DC4A0BD81F /* AEBlockChannel.m in Sources */,
+				F089A93C67CF38159DE48090 /* AEBlockFilter.m in Sources */,
+				80E9C2EC36473B0AE3A546B0 /* AEBlockScheduler.m in Sources */,
+				97E8BE075FFD6742E4921BA5 /* AEExpanderFilter.m in Sources */,
+				52C4D123A765485F1C8A08D6 /* AEFloatConverter.m in Sources */,
+				0A807A5E985991C12F084BBF /* AELimiter.m in Sources */,
+				F143B99547AD6850F7BECDD7 /* AELimiterFilter.m in Sources */,
+				D7913897BF141A3CF2D79847 /* AEMixerBuffer.m in Sources */,
+				98EB0DC3A2379D9C4DAF8478 /* AEPlaythroughChannel.m in Sources */,
+				887B0F3DC8F752878E9A9FF3 /* AERecorder.m in Sources */,
+				B5E7ABB763FB53AE54180C97 /* AEUtilities.c in Sources */,
+				EAE683A5AA3BD774B5D0F012 /* Pods-TheAmazingAudioEngine-dummy.m in Sources */,
+				84706D7B6EC2CD257FE849B6 /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				A3C8CD71C2E8031C398679EC /* TPCircularBuffer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E921035F2EA3CC0C766AA8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936927576A8514DD3A85494E /* DDASLLogCapture.m in Sources */,
+				4E8A391DE816486C00223DEB /* DDASLLogger.m in Sources */,
+				809EF78078024C898F12134D /* DDAbstractDatabaseLogger.m in Sources */,
+				EFE5959141F24C44C88D5D8D /* DDContextFilterLogFormatter.m in Sources */,
+				78E9D68AEFB3537F38FE3A1F /* DDDispatchQueueLogFormatter.m in Sources */,
+				E2051E79A6D2EADB4501C405 /* DDFileLogger.m in Sources */,
+				C51242C18C5644B0488A3E92 /* DDLog.m in Sources */,
+				E715F2BAC26B74A086316ECF /* DDMultiFormatter.m in Sources */,
+				D4D6BAC63B54911A2BDBA402 /* DDTTYLogger.m in Sources */,
+				548020B6420C003BEDF540D7 /* Pods-CocoaLumberjack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEEC939BBBFB6DA1BBF3F7E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC84139A12974CCD48EA3679 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75E7293D6122E1B23D3F768B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AFNetworking";
+			target = 6FE69A9E37E8AFB55EF4A835 /* Pods-AFNetworking */;
+			targetProxy = 3F3471E7329C1E0EBC7B6202 /* PBXContainerItemProxy */;
+		};
+		88772856C8AB8BCEE248004C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TheAmazingAudioEngine";
+			target = DA831C8B7AC2C66E6EFD20EA /* Pods-TheAmazingAudioEngine */;
+			targetProxy = E9BDDD50C1EA12CD0E492111 /* PBXContainerItemProxy */;
+		};
+		B9D97D70C77A6592A7B9BEA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PubNub";
+			target = C40123E858D6552FD1051323 /* Pods-PubNub */;
+			targetProxy = 863881458816D3C0FC7236F1 /* PBXContainerItemProxy */;
+		};
+		D0A5A0A88FED40A807B8B0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AFNetworking";
+			target = 6FE69A9E37E8AFB55EF4A835 /* Pods-AFNetworking */;
+			targetProxy = AB6DF4EFF2B17FA5C289E8B6 /* PBXContainerItemProxy */;
+		};
+		E31B55087741969CB68CD5D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CocoaLumberjack";
+			target = 7D4C15811710CDF2606A96F3 /* Pods-CocoaLumberjack */;
+			targetProxy = 6039FF8B280CB1109D2ABF3C /* PBXContainerItemProxy */;
+		};
+		FE1766E046A59CB4D99B79C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CocoaLumberjack";
+			target = 7D4C15811710CDF2606A96F3 /* Pods-CocoaLumberjack */;
+			targetProxy = A8A4189A901FDCAB3959A192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3417599BC76FCCE3C159A4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF33D9CF08C25F27B112A68 /* Pods-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		36520396B1B977033E1C668F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A786691196FC5EC058A149 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/slobdell/Documents/IOS_shit/walkieTest1,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3E51E1849530689554689A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBC6067D92C90FE8347D05C /* Pods-PubNub-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PubNub/Pods-PubNub-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3F14BA1501366860C88E8D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894B12650E7B073892E27DF9 /* Pods-TheAmazingAudioEngine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheAmazingAudioEngine/Pods-TheAmazingAudioEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E3CD29428FD78F5D74389BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894B12650E7B073892E27DF9 /* Pods-TheAmazingAudioEngine-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheAmazingAudioEngine/Pods-TheAmazingAudioEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7CA47998E59189094FC10550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBC6067D92C90FE8347D05C /* Pods-PubNub-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PubNub/Pods-PubNub-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F5D595EA620A789BF795767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ADAFEF0A300E4B3BB13C8356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97FF2EAEB67B376F676496B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/slobdell/Documents/IOS_shit/walkieTest1,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AEA9FE88CBC99DAF485C36CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF33D9CF08C25F27B112A68 /* Pods-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B1766B9836AE7F4775F97D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7F8464848B4DF36B5CF86E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9619C9E21D7447F17A0ABD /* Pods-CocoaLumberjack-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CocoaLumberjack/Pods-CocoaLumberjack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C4DA357FF3991896C1B21707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9619C9E21D7447F17A0ABD /* Pods-CocoaLumberjack-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CocoaLumberjack/Pods-CocoaLumberjack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230A45F5E6F1D79D632C387B /* Build configuration list for PBXNativeTarget "Pods-TheAmazingAudioEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F14BA1501366860C88E8D95 /* Debug */,
+				5E3CD29428FD78F5D74389BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB3EB6EB82A56640DEA3F9C /* Build configuration list for PBXNativeTarget "Pods-PubNub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E51E1849530689554689A7C /* Debug */,
+				7CA47998E59189094FC10550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72939312B0A3BCF181F53BA0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36520396B1B977033E1C668F /* Debug */,
+				ADAFEF0A300E4B3BB13C8356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ABF7259CCD309A92DC66E19 /* Build configuration list for PBXNativeTarget "Pods-CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA357FF3991896C1B21707 /* Debug */,
+				B7F8464848B4DF36B5CF86E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82262E6650A274649F28E55D /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3417599BC76FCCE3C159A4B1 /* Debug */,
+				AEA9FE88CBC99DAF485C36CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F27E494AB3085E448F575F /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5D595EA620A789BF795767 /* Debug */,
+				B1766B9836AE7F4775F97D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDE06C09E79A8142C4C300A2 /* Project object */;
+}
